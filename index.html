@@ -1,0 +1,883 @@
+<!DOCTYPE html><html lang="ru"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>ШитьЁ — производство одежды полного цикла</title>
+  <meta name="description" content="Контрактное производство одежды в Обнинске: лекала, образец, серийный пошив, брендирование, маркировка и доставка.">
+  <meta name="theme-color" content="#f7fbff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23f7fbff'/%3E%3Cpath d='M13 19h38M13 32h38M13 45h38' stroke='%23175cff' stroke-width='4' stroke-linecap='round' stroke-dasharray='7 6'/%3E%3Ccircle cx='47' cy='19' r='5' fill='%23ff6f61'/%3E%3C/svg%3E">
+  
+<style>:root{--ink:#142638;--muted:#526579;--blue:#175cff;--coral:#ff6f61;--line:#dbe4ec;--paper:#f5f8fb;--pad:clamp(20px,4vw,64px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;background:white;color:var(--ink);font-family:Manrope,Arial,sans-serif;font-size:16px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+img{display:block;max-width:100%}
+svg{width:24px;height:24px}
+button:focus-visible,a:focus-visible,[role=button]:focus-visible{outline:3px solid var(--coral);outline-offset:5px}
+::selection{background:#dcecff}
+.wrap{max-width:1480px;margin:auto;padding-inline:var(--pad)}
+.section-pad{padding:100px 0}
+.label,.hero-kicker{font-size:.875rem;color:var(--blue);font-weight:600;letter-spacing:.025em}
+.section-title{font-family:Onest,Arial,sans-serif;font-size:clamp(2.5rem,4.8vw,4.5rem);line-height:1.12;letter-spacing:-.045em;font-weight:500;margin:16px 0 0}
+.section-intro{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:end;margin-bottom:40px}
+.section-intro p{color:var(--muted);max-width:530px;margin:0}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 23px;border:1px solid var(--blue);background:var(--blue);color:white;border-radius:5px;font-weight:600;font-size:.9375rem;transition:background .2s}
+.button:hover{background:#1046c4}
+.button.light{background:white;border-color:var(--line);color:var(--ink)}
+.button.coral{background:var(--blue)}
+.button:disabled{opacity:.6}
+.button svg{display:none}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav-shell{height:86px;display:flex;align-items:center;gap:28px}
+.brand-logo{width:133px;flex-shrink:0}
+.brand-logo img{height:48px;width:100%;object-fit:contain}
+.nav-links{display:flex;gap:23px;margin-left:auto;font-size:.875rem}
+.nav-links a:hover{color:var(--blue)}
+.nav-phone{font-size:.875rem;font-weight:600;white-space:nowrap}
+.menu{display:none;background:none;border:1px solid var(--line);border-radius:5px;padding:10px 12px}
+.hero{padding:65px 0 60px;background:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+.hero-title{font-family:Onest,Arial,sans-serif;font-size:clamp(3.5rem,6.1vw,6.4rem);font-weight:500;line-height:1.07;letter-spacing:-.055em;margin:23px 0}
+.hero-title span{display:block}
+.hero-title .accent{color:var(--blue)}
+.hero-copy{color:var(--muted);font-size:1.125rem;max-width:540px;margin:24px 0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-proof{display:flex;flex-direction:column;gap:7px;margin-top:30px;font-size:.875rem;color:var(--muted)}
+.proof{display:flex;align-items:center;gap:10px}
+.proof i{height:5px;width:5px;background:var(--blue)}
+.hero-visual{position:relative;padding-bottom:55px}
+.hero-photo{height:580px;overflow:hidden;border-radius:6px}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.float-note{position:absolute;bottom:0;right:0;width:85%;background:#142638;color:white;padding:20px 28px;display:flex;align-items:center;gap:24px;border-left:4px solid var(--coral)}
+.float-note b{font:500 2.5rem Onest,Arial,sans-serif;white-space:nowrap}
+.float-note span{font-size:.875rem;color:#dbe7f1;max-width:185px}
+.ribbon{overflow:hidden;border-block:1px solid var(--line);background:white}
+.ribbon-track{display:flex;width:max-content;animation:ribbon 55s linear infinite}
+.ribbon span{font-size:.875rem;white-space:nowrap;padding:21px 25px;border-right:1px solid var(--line);color:var(--muted)}
+@keyframes ribbon{to{transform:translateX(-50%)}}
+.facts-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px}
+.facts-copy>p{color:var(--muted);margin:0 0 35px;font-size:1.0625rem}
+.fact-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fact-card{padding-top:20px;border-top:2px solid var(--blue);display:flex;flex-direction:column;gap:15px}
+.fact-card b{font:500 clamp(1.5rem,2.5vw,2.7rem) Onest,Arial,sans-serif;letter-spacing:-.04em;white-space:nowrap}
+.fact-card span{font-size:.875rem;color:var(--muted)}
+.process{background:#eef3f8}
+.process .section-intro{display:block}
+.process-lab{display:grid;grid-template-columns:1fr 1fr;gap:0;background:white;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.process-tabs{grid-column:1/-1;display:flex;position:relative;overflow-x:auto;border-bottom:1px solid var(--line);background:#f9fbfd;padding:0 15px}
+.process-tab{flex:0 0 auto;display:flex;gap:9px;align-items:center;min-height:70px;border:0;border-bottom:3px solid transparent;background:none;padding:15px;font-size:.875rem;color:var(--muted)}
+.process-tab span{font-size:.875rem;color:#7389a0}
+.process-tab strong{font-weight:500}
+.process-tab.active{border-bottom-color:var(--blue);color:var(--blue)}
+.process-tab.active span{color:var(--blue)}
+.process-media{position:relative;min-height:635px;background:#e7edf3}
+.process-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s}
+.process-image.active{opacity:1}
+.process-counter{position:absolute;bottom:24px;left:24px;background:white;padding:12px 18px;display:flex;align-items:center;gap:16px;border-radius:4px}
+.process-counter b{font:500 2rem Onest,sans-serif;color:var(--blue)}
+.process-counter span{font-size:.875rem;color:var(--muted)}
+.process-copy-card{padding:48px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.process-copy{display:none}
+.process-copy.active{display:block}
+.process-copy small{font-size:.875rem;color:var(--blue)}
+.process-copy h3{font:500 clamp(2rem,3vw,3.25rem)/1.15 Onest,Arial,sans-serif;letter-spacing:-.035em;margin:22px 0}
+.process-copy p{font-size:1.0625rem;color:var(--muted)}
+.process-copy ul{padding:0;list-style:none;margin:25px 0}
+.process-copy li{padding:14px 0;border-bottom:1px solid var(--line);font-family:Onest,Arial,sans-serif;font-size:1.125rem;font-weight:600;line-height:1.45;letter-spacing:-.015em;color:var(--ink)}
+.process-controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:34px}
+.round{border:1px solid var(--line);border-radius:4px;background:white;color:var(--ink);padding:10px 17px;font-size:.875rem;min-height:44px}
+.round:hover{border-color:var(--blue);color:var(--blue)}
+.catalog-tools{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:28px}
+.catalog-note{font-size:.875rem;color:var(--muted)}
+.catalog-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.category{grid-column:span 2;background:var(--paper);cursor:pointer;border-radius:6px;overflow:hidden;transition:transform .25s}
+.category:nth-child(n+4){grid-column:span 3}
+.category:hover{transform:translateY(-5px)}
+.category>img{width:100%;height:330px;object-fit:cover}
+.category-content{padding:24px}
+.category-content small{font-size:.875rem;color:var(--blue)}
+.category-content h3{font:500 1.65rem/1.2 Onest,sans-serif;margin:12px 0}
+.category-content p{font-size:1rem;color:var(--muted);margin:0}
+.category-dialog{padding:0;border:1px solid var(--line);border-radius:8px;width:min(1000px,calc(100% - 32px));max-height:90svh;overflow:auto;color:var(--ink)}
+dialog::backdrop{background:#14263899;backdrop-filter:blur(6px)}
+.dialog-grid{display:grid;grid-template-columns:1fr 1fr}
+.dialog-image{width:100%;height:100%;min-height:450px;object-fit:cover}
+.dialog-copy{padding:50px 40px}
+.dialog-copy small{color:var(--blue);font-size:.875rem}
+.dialog-copy h3{font:500 2.5rem/1.15 Onest,sans-serif}
+.dialog-copy p{color:var(--muted);margin-bottom:30px}
+.dialog-close{position:absolute;right:12px;top:12px;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:white;font-size:1.6rem}
+.quality{background:#142638;color:white}
+.quality-head{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;margin-bottom:55px;align-items:end}
+.quality h2{margin:0;max-width:780px}
+.quality-subtitle{font:400 1.5rem/1.4 Onest,sans-serif;color:#a8c6e4;margin:20px 0 0}
+.quality-head>p{color:#c5d4e3;margin:0}
+.quality-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.quality-card{padding:24px 0 10px;border-top:1px solid #4d647b;display:flex;flex-direction:column;gap:30px}
+.quality-card>span{font-size:.875rem;color:#91b5da;letter-spacing:.07em}
+.quality-card h3{font:500 1.75rem/1.2 Onest,sans-serif;margin:0 0 15px}
+.quality-card p{color:#c5d4e3;font-size:1rem;margin:0;max-width:370px}
+.partner-name{font-size:2rem}
+footer{border-top:1px solid var(--line);padding:32px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.footer-inner small{font-size:.875rem;color:var(--muted)}
+.footer-links{display:flex;gap:20px;font-size:.875rem;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:1200px){.nav-phone{display:none}
+.nav-shell{gap:20px}
+.nav-links{gap:16px}
+.hero-grid{gap:35px}
+.hero-photo{height:520px}
+.facts-grid{grid-template-columns:1fr;gap:35px}
+.fact-cards{gap:30px}
+.process-copy-card{padding:32px}}
+@media(max-width:950px){.nav-links{display:none;position:absolute;top:86px;left:0;right:0;padding:25px var(--pad);background:white;border-bottom:1px solid var(--line);flex-direction:column;font-size:1rem}
+.nav-links.open{display:flex}
+.nav-shell>.button{margin-left:auto}
+.menu{display:block}
+.hero-title{font-size:3.7rem}
+.hero-grid{gap:25px}
+.hero-photo{height:470px}
+.float-note{width:95%;padding:18px;gap:15px}
+.float-note b{font-size:2rem}
+.process-media{min-height:570px}
+.process-copy h3{font-size:2rem}
+.quality-head{gap:35px}
+.quality-grid{grid-template-columns:repeat(2,1fr)}
+.section-intro{gap:30px}
+.footer-links{display:none}}
+@media(max-width:650px){html{scroll-padding-top:85px}
+.nav-shell{height:74px;gap:10px}
+.nav-links{top:74px}
+.brand-logo{width:102px}
+.nav-shell>.button{padding:10px 12px;min-height:44px;font-size:.875rem}
+.menu{font-size:.875rem;padding:10px}
+.hero{padding:35px 0 40px}
+.hero-grid{grid-template-columns:1fr;gap:30px}
+.hero-title{font-size:clamp(2.9rem,11vw,4.5rem)}
+.hero-copy{font-size:1rem}
+.hero-photo{height:440px}
+.float-note{width:90%}
+.hero-visual{padding-bottom:55px}
+.hero-proof{margin-top:22px}
+.section-pad{padding:65px 0}
+.section-title{font-size:2.5rem}
+.section-intro{grid-template-columns:1fr;gap:24px}
+.fact-cards{grid-template-columns:1fr 1fr;gap:25px}
+.fact-card b{font-size:2.2rem}
+.process-lab{grid-template-columns:1fr}
+.process-tabs{padding:0 5px}
+.process-tab{min-height:60px;padding:12px}
+.process-media{min-height:480px}
+.process-copy-card{padding:28px 24px;min-height:380px}
+.process-copy h3{font-size:2.1rem}
+.process-copy p{font-size:1rem}
+.catalog-grid{grid-template-columns:1fr}
+.category:nth-child(n){grid-column:auto}
+.category>img{height:330px}
+.catalog-tools{align-items:flex-start;flex-direction:column}
+.quality-head{grid-template-columns:1fr;gap:26px}
+.quality-grid{grid-template-columns:1fr;gap:22px}
+.quality h2{font-size:2.45rem}
+.quality-subtitle{font-size:1.25rem}
+.quality-card{gap:20px}
+.dialog-grid{grid-template-columns:1fr}
+.dialog-image{min-height:0;height:280px}
+.dialog-copy{padding:28px 24px}
+.dialog-copy h3{font-size:2rem}
+.footer-inner{flex-direction:column;align-items:flex-start;gap:18px}
+.ribbon span{padding:16px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.reveal{opacity:1;transform:none}}</style><noscript><style>.reveal{opacity:1;transform:none}</style></noscript><style id="restored-reference-blocks">:is(#partners,#order,#contacts){
+      --paper:#f7fbff;--white:#fff;--pearl:#edf4fb;--mist:#dcecff;--ink:#0b2038;
+      --muted:#5f7187;--blue:#175cff;--blue2:#55a8ff;--coral:#ff6f61;--mint:#bff4e4;
+      --line:rgba(11,32,56,.14);--shadow:0 24px 70px rgba(29,83,143,.13);
+      --ease:cubic-bezier(.2,.8,.2,1);--pad:clamp(18px,4vw,72px);--max:1560px;
+    }
+:is(#partners,#order,#contacts) .wrap,:is(#partners,#order,#contacts).wrap{width:min(var(--max),100%);margin:auto;padding-inline:var(--pad)}
+:is(#partners,#order,#contacts) .button,:is(#partners,#order,#contacts).button{--mx:0px;--my:0px;min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:11px;padding:0 23px;border:1px solid transparent;border-radius:999px;background:var(--blue);color:#fff;text-transform:uppercase;letter-spacing:.09em;font-size:.75rem;font-weight:700;cursor:pointer;transform:translate(var(--mx),var(--my));transition:background .25s,color .25s,border-color .25s,box-shadow .25s}
+:is(#partners,#order,#contacts) .button::after,:is(#partners,#order,#contacts).button::after{content:'↗';font-size:1rem}
+:is(#partners,#order,#contacts) .button:hover,:is(#partners,#order,#contacts).button:hover{background:#094be5;box-shadow:0 13px 28px rgba(23,92,255,.24)}
+:is(#partners,#order,#contacts) .button.light,:is(#partners,#order,#contacts).button.light{background:#fff;color:var(--ink);border-color:var(--line)}
+:is(#partners,#order,#contacts) .button.coral,:is(#partners,#order,#contacts).button.coral{background:var(--coral)}
+:is(#partners,#order,#contacts) .button:disabled,:is(#partners,#order,#contacts).button:disabled{opacity:.58;cursor:wait}
+:is(#partners,#order,#contacts) .label,:is(#partners,#order,#contacts).label{font-size:.72rem;text-transform:uppercase;letter-spacing:.19em;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:12px}
+:is(#partners,#order,#contacts) .label::before,:is(#partners,#order,#contacts).label::before{content:'';width:38px;height:2px;background:var(--coral)}
+@keyframes orbit{to{transform:rotate(360deg)}}
+:is(#partners,#order,#contacts) .section-pad,:is(#partners,#order,#contacts).section-pad{padding:clamp(90px,11vw,170px) 0}
+:is(#partners,#order,#contacts) .section-title,:is(#partners,#order,#contacts).section-title{font-family:Onest,sans-serif;font-size:clamp(2.6rem,5.6vw,6.2rem);font-weight:600;line-height:.95;letter-spacing:-.075em;margin:18px 0 0}
+:is(#partners,#order,#contacts) .reveal,:is(#partners,#order,#contacts).reveal{opacity:0;transform:translateY(32px);clip-path:inset(0 0 18% 0);transition:opacity .8s var(--ease),transform .8s var(--ease),clip-path .9s var(--ease)}
+:is(#partners,#order,#contacts) .reveal.visible,:is(#partners,#order,#contacts).reveal.visible{opacity:1;transform:none;clip-path:inset(0)}
+:is(#partners,#order,#contacts) .dialog-copy .button,:is(#partners,#order,#contacts).dialog-copy .button{align-self:flex-start}
+:is(#partners,#order,#contacts) .quality .wrap,:is(#partners,#order,#contacts).quality .wrap{position:relative}
+:is(#partners,#order,#contacts) .quality .label,:is(#partners,#order,#contacts).quality .label{color:#d8e8ff}
+:is(#partners,#order,#contacts) .quality .label::before,:is(#partners,#order,#contacts).quality .label::before{background:var(--coral)}
+:is(#partners,#order,#contacts) .partners,:is(#partners,#order,#contacts).partners{background:#fff;overflow:hidden}
+:is(#partners,#order,#contacts) .partners-head,:is(#partners,#order,#contacts).partners-head{display:grid;grid-template-columns:1fr .72fr;gap:8vw;align-items:end;margin-bottom:52px}
+:is(#partners,#order,#contacts) .partners-head p,:is(#partners,#order,#contacts).partners-head p{color:var(--muted);font-size:1.08rem;max-width:560px;margin-left:auto}
+:is(#partners,#order,#contacts) .partners-grid,:is(#partners,#order,#contacts).partners-grid{position:relative;display:grid;grid-template-columns:repeat(10,minmax(0,1fr));grid-auto-rows:150px;gap:12px}
+:is(#partners,#order,#contacts) .partners-grid>.partner-card,:is(#partners,#order,#contacts).partners-grid>.partner-card{grid-column:span 2}
+:is(#partners,#order,#contacts) .partners-grid>.partner-card:nth-child(6),:is(#partners,#order,#contacts).partners-grid>.partner-card:nth-child(6){grid-column:2 / span 2}
+:is(#partners,#order,#contacts) .partners-grid::before,:is(#partners,#order,#contacts).partners-grid::before{content:'';position:absolute;left:-12vw;right:-12vw;top:50%;border-top:1px dashed rgba(23,92,255,.22);z-index:0}
+:is(#partners,#order,#contacts) .partner-card,:is(#partners,#order,#contacts).partner-card{position:relative;z-index:1;min-height:148px;display:flex;align-items:center;justify-content:center;padding:22px;border:1px solid var(--line);border-radius:26px;background:#f9fbfe;color:var(--ink);overflow:hidden;box-shadow:0 12px 36px rgba(11,32,56,.06);transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+:is(#partners,#order,#contacts) .partner-card::before,:is(#partners,#order,#contacts).partner-card::before{content:'';position:absolute;inset:auto -35% -75% 25%;height:120%;border-radius:50%;background:radial-gradient(circle,rgba(23,92,255,.12),transparent 68%);transition:transform .5s var(--ease)}
+:is(#partners,#order,#contacts) .partner-card::after,:is(#partners,#order,#contacts).partner-card::after{content:'партнёр';position:absolute;left:16px;bottom:12px;font-size:.58rem;text-transform:uppercase;letter-spacing:.18em;color:#8394a6}
+:is(#partners,#order,#contacts) .partner-card:hover,:is(#partners,#order,#contacts).partner-card:hover{transform:translateY(-7px);border-color:rgba(23,92,255,.25);box-shadow:0 18px 50px rgba(11,32,56,.11)}
+:is(#partners,#order,#contacts) .partner-card:hover::before,:is(#partners,#order,#contacts).partner-card:hover::before{transform:translate(-12%,-12%) scale(1.15)}
+:is(#partners,#order,#contacts) .partner-card.dark,:is(#partners,#order,#contacts).partner-card.dark{background:#0b2038;color:#fff;border-color:#0b2038}
+:is(#partners,#order,#contacts) .partner-card.dark::after,:is(#partners,#order,#contacts).partner-card.dark::after{color:#91a8c1}
+:is(#partners,#order,#contacts) .partner-card.logo-card,:is(#partners,#order,#contacts).partner-card.logo-card{padding:0}
+:is(#partners,#order,#contacts) .partner-card.logo-card::after,:is(#partners,#order,#contacts).partner-card.logo-card::after{display:none}
+:is(#partners,#order,#contacts) .partner-logo,:is(#partners,#order,#contacts).partner-logo{position:relative;z-index:1;width:100%;height:148px;max-width:100%;max-height:148px;object-fit:contain;transform:scale(1.16);transform-origin:center}
+:is(#partners,#order,#contacts) .partner-card.brand-card,:is(#partners,#order,#contacts).partner-card.brand-card{padding:0;border:0;background:transparent;box-shadow:none}
+:is(#partners,#order,#contacts) .partner-card.brand-card::before,:is(#partners,#order,#contacts).partner-card.brand-card::before,:is(#partners,#order,#contacts) .partner-card.brand-card::after,:is(#partners,#order,#contacts).partner-card.brand-card::after{display:none}
+:is(#partners,#order,#contacts) .brand-card-image,:is(#partners,#order,#contacts).brand-card-image{position:relative;z-index:1;display:block;width:100%;height:148px;max-width:100%;max-height:148px;object-fit:contain}
+:is(#partners,#order,#contacts) .partner-card.brand-card:hover,:is(#partners,#order,#contacts).partner-card.brand-card:hover{box-shadow:0 18px 50px rgba(11,32,56,.11)}
+:is(#partners,#order,#contacts) .contact,:is(#partners,#order,#contacts).contact{background:linear-gradient(145deg,#dceeff 0%,#f9fcff 48%,#d7f7ee 100%);overflow:hidden}
+:is(#partners,#order,#contacts) .contact::before,:is(#partners,#order,#contacts).contact::before{content:'';position:absolute;width:560px;height:560px;border:2px dashed rgba(23,92,255,.2);border-radius:50%;right:-180px;top:-190px;animation:orbit 34s linear infinite}
+:is(#partners,#order,#contacts) .contact-grid,:is(#partners,#order,#contacts).contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:7vw;align-items:center}
+:is(#partners,#order,#contacts) .contact h2,:is(#partners,#order,#contacts).contact h2{font-family:Onest,sans-serif;font-size:clamp(2.8rem,5.3vw,6rem);line-height:.92;letter-spacing:-.075em;margin:18px 0 26px}
+:is(#partners,#order,#contacts) .contact-copy,:is(#partners,#order,#contacts).contact-copy{color:var(--muted);font-size:1.08rem;max-width:560px}
+:is(#partners,#order,#contacts) .form,:is(#partners,#order,#contacts).form{position:relative;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.95);border-radius:34px;padding:clamp(25px,4vw,58px);box-shadow:var(--shadow)}
+:is(#partners,#order,#contacts) .form::before,:is(#partners,#order,#contacts).form::before{content:'Заявка';position:absolute;right:25px;top:20px;color:rgba(23,92,255,.08);font-family:Onest,sans-serif;font-weight:700;font-size:4rem;line-height:1}
+:is(#partners,#order,#contacts) .form-grid,:is(#partners,#order,#contacts).form-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+:is(#partners,#order,#contacts) .field.full,:is(#partners,#order,#contacts).field.full{grid-column:1/-1}
+:is(#partners,#order,#contacts) .field label,:is(#partners,#order,#contacts).field label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.11em;color:#61758c;font-weight:700;margin-bottom:7px}
+:is(#partners,#order,#contacts) .field input,:is(#partners,#order,#contacts).field input,:is(#partners,#order,#contacts) .field select,:is(#partners,#order,#contacts).field select,:is(#partners,#order,#contacts) .field textarea,:is(#partners,#order,#contacts).field textarea{width:100%;border:0;border-bottom:1px solid #9db0c4;background:transparent;border-radius:0;padding:12px 0;outline:none;color:var(--ink)}
+:is(#partners,#order,#contacts) .field input:focus,:is(#partners,#order,#contacts).field input:focus,:is(#partners,#order,#contacts) .field select:focus,:is(#partners,#order,#contacts).field select:focus,:is(#partners,#order,#contacts) .field textarea:focus,:is(#partners,#order,#contacts).field textarea:focus{border-color:var(--blue)}
+:is(#partners,#order,#contacts) .field input[aria-invalid="true"],:is(#partners,#order,#contacts).field input[aria-invalid="true"]{border-color:#a62b3e}
+:is(#partners,#order,#contacts) .field textarea,:is(#partners,#order,#contacts).field textarea{min-height:90px;resize:vertical}
+:is(#partners,#order,#contacts) .field small,:is(#partners,#order,#contacts).field small{display:block;color:var(--muted);font-size:.72rem;margin-top:6px}
+:is(#partners,#order,#contacts) .field .field-error,:is(#partners,#order,#contacts).field .field-error{min-height:1.15em;color:#a62b3e}
+:is(#partners,#order,#contacts) .choice-field,:is(#partners,#order,#contacts).choice-field{min-width:0;margin:0;padding:0;border:0}
+:is(#partners,#order,#contacts) .choice-field legend,:is(#partners,#order,#contacts).choice-field legend{display:block;width:100%;font-size:.7rem;text-transform:uppercase;letter-spacing:.11em;color:#61758c;font-weight:700;margin-bottom:10px}
+:is(#partners,#order,#contacts) .choice-options,:is(#partners,#order,#contacts).choice-options{display:flex;flex-wrap:wrap;gap:9px}
+:is(#partners,#order,#contacts) .choice-option,:is(#partners,#order,#contacts).choice-option{position:relative;display:block;cursor:pointer}
+:is(#partners,#order,#contacts) .choice-option input,:is(#partners,#order,#contacts).choice-option input{position:absolute;inline-size:1px;block-size:1px;opacity:0;pointer-events:none}
+:is(#partners,#order,#contacts) .choice-option span,:is(#partners,#order,#contacts).choice-option span{min-height:44px;display:flex;align-items:center;justify-content:center;padding:10px 16px;border:1px solid #c7d3df;border-radius:13px;background:rgba(255,255,255,.7);color:var(--ink);font-size:.9rem;font-weight:650;transition:border-color .2s,background .2s,color .2s,box-shadow .2s,transform .2s}
+:is(#partners,#order,#contacts) .choice-option:hover span,:is(#partners,#order,#contacts).choice-option:hover span{border-color:#8da7c1;transform:translateY(-1px)}
+:is(#partners,#order,#contacts) .choice-option input:checked+span,:is(#partners,#order,#contacts).choice-option input:checked+span{border-color:var(--coral);background:rgba(255,91,94,.09);color:#d63d45;box-shadow:0 0 0 1px var(--coral)}
+:is(#partners,#order,#contacts) .choice-option input:focus-visible+span,:is(#partners,#order,#contacts).choice-option input:focus-visible+span{outline:3px solid rgba(23,92,255,.25);outline-offset:2px}
+:is(#partners,#order,#contacts) .choice-field.invalid .choice-options,:is(#partners,#order,#contacts).choice-field.invalid .choice-options{border-radius:15px;box-shadow:0 0 0 2px rgba(166,43,62,.18)}
+:is(#partners,#order,#contacts) .consent-field,:is(#partners,#order,#contacts).consent-field{margin-top:2px}
+:is(#partners,#order,#contacts) .consent-label,:is(#partners,#order,#contacts).consent-label{display:flex;align-items:flex-start;gap:11px;cursor:pointer;color:var(--ink);font-size:.86rem;line-height:1.45}
+:is(#partners,#order,#contacts) .consent-label input,:is(#partners,#order,#contacts).consent-label input{inline-size:18px;block-size:18px;flex:0 0 auto;margin:2px 0 0;accent-color:var(--blue)}
+:is(#partners,#order,#contacts) .consent-label input:focus-visible,:is(#partners,#order,#contacts).consent-label input:focus-visible{outline:3px solid rgba(23,92,255,.25);outline-offset:3px}
+:is(#partners,#order,#contacts) .consent-field.invalid .consent-label,:is(#partners,#order,#contacts).consent-field.invalid .consent-label{color:#a62b3e}
+:is(#partners,#order,#contacts) .consent-field .field-error,:is(#partners,#order,#contacts).consent-field .field-error{display:block;min-height:1.15em;color:#a62b3e;font-size:.72rem;margin:6px 0 0 29px}
+:is(#partners,#order,#contacts) .form .button,:is(#partners,#order,#contacts).form .button{width:100%;margin-top:24px}
+:is(#partners,#order,#contacts) .form-status,:is(#partners,#order,#contacts).form-status{display:block;color:var(--muted);font-size:.75rem;margin-top:13px;min-height:23px}
+:is(#partners,#order,#contacts) .order-facts,:is(#partners,#order,#contacts).order-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:34px}
+:is(#partners,#order,#contacts) .order-fact,:is(#partners,#order,#contacts).order-fact{min-height:105px;display:flex;flex-direction:column;justify-content:space-between;padding:17px;border:1px solid rgba(23,92,255,.14);border-radius:20px;background:rgba(255,255,255,.55)}
+:is(#partners,#order,#contacts) .order-fact b,:is(#partners,#order,#contacts).order-fact b{font-family:Onest,sans-serif;font-size:1.65rem;letter-spacing:-.05em}
+:is(#partners,#order,#contacts) .order-fact span,:is(#partners,#order,#contacts).order-fact span{color:var(--muted);font-size:.82rem}
+:is(#partners,#order,#contacts) .contacts-section,:is(#partners,#order,#contacts).contacts-section{position:relative;padding:clamp(110px,10vw,160px) 0 90px;background:linear-gradient(180deg,#f9fcff 0%,#edf6ff 58%,#f8fbff 100%);overflow:hidden;isolation:isolate}
+:is(#partners,#order,#contacts) .contacts-section::before,:is(#partners,#order,#contacts).contacts-section::before{content:'';position:absolute;inset:0;z-index:-2;background-image:linear-gradient(rgba(23,92,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(23,92,255,.055) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000 0%,#000 72%,transparent 100%)}
+:is(#partners,#order,#contacts) .contacts-section::after,:is(#partners,#order,#contacts).contacts-section::after{content:'';position:absolute;z-index:-2;width:470px;height:470px;border:2px solid rgba(23,92,255,.14);border-radius:48% 52% 42% 58%;right:-120px;top:90px;transform:rotate(-18deg)}
+:is(#partners,#order,#contacts) .contacts-content,:is(#partners,#order,#contacts).contacts-content{position:relative;z-index:2}
+:is(#partners,#order,#contacts) .contacts-head,:is(#partners,#order,#contacts).contacts-head{text-align:center;max-width:900px;margin:0 auto 44px}
+:is(#partners,#order,#contacts) .contacts-kicker,:is(#partners,#order,#contacts).contacts-kicker{justify-content:center}
+:is(#partners,#order,#contacts) .contacts-head h2,:is(#partners,#order,#contacts).contacts-head h2{font-family:Onest,sans-serif;font-size:clamp(4.2rem,8vw,8rem);font-weight:600;line-height:.82;letter-spacing:-.085em;margin:24px 0 22px}
+:is(#partners,#order,#contacts) .contacts-head p,:is(#partners,#order,#contacts).contacts-head p{max-width:720px;margin:0 auto;color:var(--muted);font-size:clamp(1rem,1.45vw,1.24rem);line-height:1.45}
+:is(#partners,#order,#contacts) .contacts-visuals,:is(#partners,#order,#contacts).contacts-visuals{position:absolute;z-index:-1;inset:250px calc(50% - 50vw) 0;pointer-events:none}
+:is(#partners,#order,#contacts) .contact-visual,:is(#partners,#order,#contacts).contact-visual{position:absolute;bottom:-90px;object-fit:cover;filter:drop-shadow(0 24px 55px rgba(29,83,143,.13))}
+:is(#partners,#order,#contacts) .contact-visual.left,:is(#partners,#order,#contacts).contact-visual.left{left:0;width:min(30vw,508px);border-radius:0 42px 42px 0}
+:is(#partners,#order,#contacts) .contact-visual.right,:is(#partners,#order,#contacts).contact-visual.right{right:0;width:min(13vw,213px);border-radius:42px 0 0 42px}
+:is(#partners,#order,#contacts) .contact-visual-cta,:is(#partners,#order,#contacts).contact-visual-cta{position:absolute;right:26px;bottom:26px;width:235px;min-height:78px;display:flex;align-items:center;justify-content:center;padding:14px 23px;border-radius:999px;background:var(--coral);color:#fff;text-transform:uppercase;letter-spacing:.07em;font-size:.7rem;font-weight:700;line-height:1.35;box-shadow:0 16px 34px rgba(255,111,97,.24);pointer-events:auto;transition:transform .25s var(--ease),box-shadow .25s}
+:is(#partners,#order,#contacts) .contact-visual-cta:hover,:is(#partners,#order,#contacts).contact-visual-cta:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(255,111,97,.32)}
+:is(#partners,#order,#contacts) .contact-channel-grid,:is(#partners,#order,#contacts).contact-channel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1200px;margin:0 auto 18px}
+:is(#partners,#order,#contacts) .contact-channel,:is(#partners,#order,#contacts).contact-channel{min-height:154px;display:grid;grid-template-columns:68px minmax(0,1fr) 42px;gap:14px;align-items:center;padding:22px;border:1px solid rgba(23,92,255,.12);border-radius:28px;background:rgba(255,255,255,.92);box-shadow:0 18px 48px rgba(29,83,143,.09);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+:is(#partners,#order,#contacts) .contact-channel:hover,:is(#partners,#order,#contacts).contact-channel:hover{transform:translateY(-6px);border-color:rgba(23,92,255,.3);box-shadow:0 24px 58px rgba(29,83,143,.15)}
+:is(#partners,#order,#contacts) .contact-channel:focus-visible,:is(#partners,#order,#contacts).contact-channel:focus-visible,:is(#partners,#order,#contacts) .contact-visual-cta:focus-visible,:is(#partners,#order,#contacts).contact-visual-cta:focus-visible,:is(#partners,#order,#contacts) .contact-map-external:focus-visible,:is(#partners,#order,#contacts).contact-map-external:focus-visible{outline:3px solid rgba(23,92,255,.32);outline-offset:4px}
+:is(#partners,#order,#contacts) .contact-channel-icon,:is(#partners,#order,#contacts).contact-channel-icon{width:68px;height:68px;display:grid;place-items:center;border:1px solid rgba(23,92,255,.13);border-radius:50%;background:#f2f8ff;color:var(--blue)}
+:is(#partners,#order,#contacts) .contact-channel-icon svg,:is(#partners,#order,#contacts).contact-channel-icon svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+:is(#partners,#order,#contacts) .contact-channel-icon.telegram,:is(#partners,#order,#contacts).contact-channel-icon.telegram{background:linear-gradient(145deg,#39bdf9,#1686ec);color:#fff;border-color:transparent}
+:is(#partners,#order,#contacts) .contact-channel-icon.telegram svg,:is(#partners,#order,#contacts).contact-channel-icon.telegram svg{width:38px;height:38px;fill:currentColor;stroke:none}
+:is(#partners,#order,#contacts) .contact-channel-icon.max,:is(#partners,#order,#contacts).contact-channel-icon.max{overflow:hidden;border:0;background:#fff}
+:is(#partners,#order,#contacts) .contact-channel-icon.max img,:is(#partners,#order,#contacts).contact-channel-icon.max img{width:100%;height:100%;object-fit:cover}
+:is(#partners,#order,#contacts) .contact-channel-copy,:is(#partners,#order,#contacts).contact-channel-copy{min-width:0}
+:is(#partners,#order,#contacts) .contact-channel-copy small,:is(#partners,#order,#contacts).contact-channel-copy small{display:block;margin-bottom:10px;color:var(--blue);font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;font-weight:700}
+:is(#partners,#order,#contacts) .contact-channel-copy strong,:is(#partners,#order,#contacts).contact-channel-copy strong{display:block;font-family:Onest,sans-serif;font-size:clamp(1rem,1.2vw,1.23rem);line-height:1.2;letter-spacing:-.035em;white-space:nowrap}
+:is(#partners,#order,#contacts) .contact-channel-copy span,:is(#partners,#order,#contacts).contact-channel-copy span{display:block;margin-top:8px;color:var(--muted);font-size:.77rem;line-height:1.45}
+:is(#partners,#order,#contacts) .contact-channel-arrow,:is(#partners,#order,#contacts).contact-channel-arrow{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(23,92,255,.18);border-radius:50%;background:#fff;color:var(--blue);font-size:1.25rem;transition:.25s}
+:is(#partners,#order,#contacts) .contact-channel:hover .contact-channel-arrow,:is(#partners,#order,#contacts).contact-channel:hover .contact-channel-arrow{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateX(3px)}
+:is(#partners,#order,#contacts) .contact-location-card,:is(#partners,#order,#contacts).contact-location-card{max-width:880px;margin:auto;border:1px solid rgba(23,92,255,.12);border-radius:30px;background:rgba(255,255,255,.94);box-shadow:0 20px 56px rgba(29,83,143,.1);overflow:hidden}
+:is(#partners,#order,#contacts) .contact-location-meta,:is(#partners,#order,#contacts).contact-location-meta{display:grid;grid-template-columns:1.2fr .8fr;gap:0;padding:24px 28px}
+:is(#partners,#order,#contacts) .contact-location-item,:is(#partners,#order,#contacts).contact-location-item{display:grid;grid-template-columns:62px 1fr;gap:18px;align-items:center;min-width:0}
+:is(#partners,#order,#contacts) .contact-location-item+.contact-location-item,:is(#partners,#order,#contacts).contact-location-item+.contact-location-item{padding-left:28px;border-left:1px solid var(--line)}
+:is(#partners,#order,#contacts) .contact-location-icon,:is(#partners,#order,#contacts).contact-location-icon{width:58px;height:58px;display:grid;place-items:center;border:1px solid rgba(23,92,255,.16);border-radius:50%;background:#f6faff;color:var(--blue)}
+:is(#partners,#order,#contacts) .contact-location-icon svg,:is(#partners,#order,#contacts).contact-location-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+:is(#partners,#order,#contacts) .contact-location-copy small,:is(#partners,#order,#contacts).contact-location-copy small{display:block;color:var(--blue);font-size:.68rem;text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:7px}
+:is(#partners,#order,#contacts) .contact-location-copy strong,:is(#partners,#order,#contacts).contact-location-copy strong,:is(#partners,#order,#contacts) .contact-location-copy span,:is(#partners,#order,#contacts).contact-location-copy span{display:block}
+:is(#partners,#order,#contacts) .contact-location-copy strong,:is(#partners,#order,#contacts).contact-location-copy strong{font-family:Onest,sans-serif;font-size:1.08rem;line-height:1.3;letter-spacing:-.025em}
+:is(#partners,#order,#contacts) .contact-location-copy span,:is(#partners,#order,#contacts).contact-location-copy span{color:var(--muted);font-size:.78rem;margin-top:4px}
+:is(#partners,#order,#contacts) .contact-map,:is(#partners,#order,#contacts).contact-map{position:relative;height:210px;background:#dce8f5;overflow:hidden}
+:is(#partners,#order,#contacts) .contact-map iframe,:is(#partners,#order,#contacts).contact-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+:is(#partners,#order,#contacts) .contact-map-external,:is(#partners,#order,#contacts).contact-map-external{min-height:48px;display:flex;align-items:center;justify-content:center;padding:10px 18px;border-top:1px solid var(--line);background:#fff;color:var(--blue);font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;transition:.25s}
+:is(#partners,#order,#contacts) .contact-map-external:hover,:is(#partners,#order,#contacts).contact-map-external:hover{background:var(--blue);color:#fff}
+:is(#partners,#order,#contacts) .contact-map-label,:is(#partners,#order,#contacts).contact-map-label{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:min(300px,70%);padding:13px 16px;border:1px solid rgba(255,255,255,.9);border-radius:17px;background:rgba(255,255,255,.93);box-shadow:0 12px 35px rgba(11,32,56,.13)}
+:is(#partners,#order,#contacts) .contact-map-label strong,:is(#partners,#order,#contacts).contact-map-label strong,:is(#partners,#order,#contacts) .contact-map-label span,:is(#partners,#order,#contacts).contact-map-label span{display:block}
+:is(#partners,#order,#contacts) .contact-map-label strong,:is(#partners,#order,#contacts).contact-map-label strong{font-family:Onest,sans-serif;font-size:.9rem;margin-bottom:3px}
+:is(#partners,#order,#contacts) .contact-map-label span,:is(#partners,#order,#contacts).contact-map-label span{color:var(--muted);font-size:.73rem}
+@media(max-width:1120px){:is(#partners,#order,#contacts) .partners-head,:is(#partners,#order,#contacts).partners-head,:is(#partners,#order,#contacts) .contact-grid,:is(#partners,#order,#contacts).contact-grid{grid-template-columns:1fr}
+:is(#partners,#order,#contacts) .partners-grid,:is(#partners,#order,#contacts).partners-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+:is(#partners,#order,#contacts) .partners-grid>.partner-card:nth-child(6),:is(#partners,#order,#contacts).partners-grid>.partner-card:nth-child(6){grid-column:auto / span 2}
+:is(#partners,#order,#contacts) .partners-head p,:is(#partners,#order,#contacts).partners-head p{margin-left:0}
+:is(#partners,#order,#contacts) .contacts-visuals,:is(#partners,#order,#contacts).contacts-visuals{position:relative;inset:auto;z-index:0;height:305px;margin:0 calc(var(--pad)*-1) 28px}
+:is(#partners,#order,#contacts) .contact-visual,:is(#partners,#order,#contacts).contact-visual{bottom:0}
+:is(#partners,#order,#contacts) .contact-visual.left,:is(#partners,#order,#contacts).contact-visual.left{width:min(42vw,370px)}
+:is(#partners,#order,#contacts) .contact-visual.right,:is(#partners,#order,#contacts).contact-visual.right{width:min(24vw,205px)}
+:is(#partners,#order,#contacts) .contact-visual-cta,:is(#partners,#order,#contacts).contact-visual-cta{right:26px;bottom:16px}
+:is(#partners,#order,#contacts) .contact-channel-grid,:is(#partners,#order,#contacts).contact-channel-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+:is(#partners,#order,#contacts) .contact-channel:last-child,:is(#partners,#order,#contacts).contact-channel:last-child{grid-column:1/-1}}
+@media(max-width:720px){:is(#partners,#order,#contacts){--pad:18px}
+:is(#partners,#order,#contacts) .nav-actions>.button,:is(#partners,#order,#contacts).nav-actions>.button{display:none}
+:is(#partners,#order,#contacts) .hero-actions .button,:is(#partners,#order,#contacts).hero-actions .button{width:100%}
+:is(#partners,#order,#contacts) .section-pad,:is(#partners,#order,#contacts).section-pad{padding:80px 0}
+:is(#partners,#order,#contacts) .section-title,:is(#partners,#order,#contacts).section-title{font-size:clamp(2.5rem,12vw,4.3rem)}
+:is(#partners,#order,#contacts) .partners-grid,:is(#partners,#order,#contacts).partners-grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:122px;gap:9px}
+:is(#partners,#order,#contacts) .partners-grid>.partner-card:last-child,:is(#partners,#order,#contacts).partners-grid>.partner-card:last-child{grid-column:2 / span 2}
+:is(#partners,#order,#contacts) .partner-card,:is(#partners,#order,#contacts).partner-card{min-height:120px;padding:17px;border-radius:20px}
+:is(#partners,#order,#contacts) .partner-card.logo-card,:is(#partners,#order,#contacts).partner-card.logo-card,:is(#partners,#order,#contacts) .partner-card.brand-card,:is(#partners,#order,#contacts).partner-card.brand-card{padding:0}
+:is(#partners,#order,#contacts) .partner-logo,:is(#partners,#order,#contacts).partner-logo,:is(#partners,#order,#contacts) .brand-card-image,:is(#partners,#order,#contacts).brand-card-image{height:120px;max-height:120px}
+:is(#partners,#order,#contacts) .partners-head,:is(#partners,#order,#contacts).partners-head{margin-bottom:32px}
+:is(#partners,#order,#contacts) .contact-grid,:is(#partners,#order,#contacts).contact-grid{gap:42px}
+:is(#partners,#order,#contacts) .form-grid,:is(#partners,#order,#contacts).form-grid{grid-template-columns:1fr}
+:is(#partners,#order,#contacts) .field.full,:is(#partners,#order,#contacts).field.full{grid-column:auto}
+:is(#partners,#order,#contacts) .order-facts,:is(#partners,#order,#contacts).order-facts{grid-template-columns:1fr}
+:is(#partners,#order,#contacts) .contacts-section,:is(#partners,#order,#contacts).contacts-section{padding:90px 0 64px}
+:is(#partners,#order,#contacts) .contacts-head,:is(#partners,#order,#contacts).contacts-head{margin-bottom:30px}
+:is(#partners,#order,#contacts) .contacts-head h2,:is(#partners,#order,#contacts).contacts-head h2{font-size:clamp(3.9rem,20vw,6rem);margin:20px 0 18px}
+:is(#partners,#order,#contacts) .contacts-visuals,:is(#partners,#order,#contacts).contacts-visuals{height:clamp(235px,54vw,320px)}
+:is(#partners,#order,#contacts) .contact-visual.left,:is(#partners,#order,#contacts).contact-visual.left{width:72vw;max-width:390px}
+:is(#partners,#order,#contacts) .contact-visual.right,:is(#partners,#order,#contacts).contact-visual.right{width:34vw;max-width:180px}
+:is(#partners,#order,#contacts) .contact-visual-cta,:is(#partners,#order,#contacts).contact-visual-cta{right:14px;bottom:8px;width:180px;min-height:58px;padding:11px 17px;font-size:.59rem}
+:is(#partners,#order,#contacts) .contact-channel-grid,:is(#partners,#order,#contacts).contact-channel-grid{grid-template-columns:1fr;gap:10px}
+:is(#partners,#order,#contacts) .contact-channel:last-child,:is(#partners,#order,#contacts).contact-channel:last-child{grid-column:auto}
+:is(#partners,#order,#contacts) .contact-channel,:is(#partners,#order,#contacts).contact-channel{min-height:124px;grid-template-columns:62px minmax(0,1fr) 40px;padding:17px;border-radius:23px}
+:is(#partners,#order,#contacts) .contact-channel-icon,:is(#partners,#order,#contacts).contact-channel-icon{width:62px;height:62px}
+:is(#partners,#order,#contacts) .contact-channel-icon svg,:is(#partners,#order,#contacts).contact-channel-icon svg{width:29px;height:29px}
+:is(#partners,#order,#contacts) .contact-channel-copy strong,:is(#partners,#order,#contacts).contact-channel-copy strong{font-size:.98rem}
+:is(#partners,#order,#contacts) .contact-location-card,:is(#partners,#order,#contacts).contact-location-card{border-radius:24px}
+:is(#partners,#order,#contacts) .contact-location-meta,:is(#partners,#order,#contacts).contact-location-meta{grid-template-columns:1fr;gap:20px;padding:21px}
+:is(#partners,#order,#contacts) .contact-location-item,:is(#partners,#order,#contacts).contact-location-item{grid-template-columns:52px 1fr;gap:14px}
+:is(#partners,#order,#contacts) .contact-location-item+.contact-location-item,:is(#partners,#order,#contacts).contact-location-item+.contact-location-item{padding:20px 0 0;border-left:0;border-top:1px solid var(--line)}
+:is(#partners,#order,#contacts) .contact-location-icon,:is(#partners,#order,#contacts).contact-location-icon{width:50px;height:50px}
+:is(#partners,#order,#contacts) .contact-map,:is(#partners,#order,#contacts).contact-map{height:260px}
+:is(#partners,#order,#contacts) .contact-map-label,:is(#partners,#order,#contacts).contact-map-label{width:calc(100% - 28px)}}
+@media(prefers-reduced-motion:reduce){:is(#partners,#order,#contacts) .contact::before,:is(#partners,#order,#contacts).contact::before{animation:none}
+:is(#partners,#order,#contacts) .reveal,:is(#partners,#order,#contacts).reveal{opacity:1;transform:none;clip-path:none}}
+:is(#partners,#order,#contacts) #order,:is(#partners,#order,#contacts)#order{background:linear-gradient(135deg,#f5faff 0%,#eef6ff 55%,#f9fcff 100%);isolation:isolate}
+:is(#partners,#order,#contacts) #order::before,:is(#partners,#order,#contacts)#order::before{opacity:.3;pointer-events:none}
+:is(#partners,#order,#contacts) #order .contact-grid,:is(#partners,#order,#contacts)#order .contact-grid{display:block;position:relative;z-index:1}
+:is(#partners,#order,#contacts) #order .order-intro,:is(#partners,#order,#contacts)#order .order-intro{position:relative;padding:0 0 40px;isolation:isolate}
+:is(#partners,#order,#contacts) #order .order-intro h2,:is(#partners,#order,#contacts)#order .order-intro h2{max-width:900px;font-size:clamp(3.3rem,6.5vw,6.8rem);margin:22px 0 24px}
+:is(#partners,#order,#contacts) #order .contact-copy,:is(#partners,#order,#contacts)#order .contact-copy{max-width:770px;font-size:clamp(1rem,1.3vw,1.2rem);line-height:1.65}
+:is(#partners,#order,#contacts) #order .order-facts,:is(#partners,#order,#contacts)#order .order-facts{max-width:850px;gap:16px;margin-top:28px}
+:is(#partners,#order,#contacts) #order .order-fact,:is(#partners,#order,#contacts)#order .order-fact{position:relative;min-height:112px;display:grid;grid-template-columns:58px 1fr;align-content:center;gap:4px 18px;padding:22px 24px;background:rgba(255,255,255,.72);border-color:rgba(23,92,255,.16);transition:background .25s,border-color .25s,transform .25s}
+:is(#partners,#order,#contacts) #order .order-fact:hover,:is(#partners,#order,#contacts)#order .order-fact:hover{background:#fff;border-color:rgba(23,92,255,.3);transform:translateY(-2px)}
+:is(#partners,#order,#contacts) #order .order-fact b,:is(#partners,#order,#contacts)#order .order-fact b{font-size:2rem;line-height:1.05}
+:is(#partners,#order,#contacts) #order .order-fact span,:is(#partners,#order,#contacts)#order .order-fact span{grid-column:2;font-size:.92rem;line-height:1.45}
+:is(#partners,#order,#contacts) #order .fact-icon,:is(#partners,#order,#contacts)#order .fact-icon{grid-row:1/3;width:58px;height:58px;padding:15px;border-radius:50%;background:#eaf2ff;color:var(--blue)}
+:is(#partners,#order,#contacts) #order .order-textile,:is(#partners,#order,#contacts)#order .order-textile{position:absolute;z-index:-1;right:-10px;top:-55px;width:52%;height:425px;pointer-events:none;mask-image:linear-gradient(to right,transparent,#000 35%),linear-gradient(to bottom,transparent,#000 12%,#000 85%,transparent);mask-composite:intersect}
+:is(#partners,#order,#contacts) #order .order-textile img,:is(#partners,#order,#contacts)#order .order-textile img{width:100%;height:100%;object-fit:contain;object-position:center;clip-path:inset(0 6px 0 0)}
+:is(#partners,#order,#contacts) #order .form,:is(#partners,#order,#contacts)#order .form{width:100%;border:1px solid rgba(23,92,255,.16);background:rgba(255,255,255,.78);border-radius:30px;padding:clamp(24px,3vw,46px);box-shadow:0 16px 50px rgba(45,91,143,.035)}
+:is(#partners,#order,#contacts) #order .form::before,:is(#partners,#order,#contacts)#order .form::before{display:none}
+:is(#partners,#order,#contacts) #order .form-heading,:is(#partners,#order,#contacts)#order .form-heading{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;margin-bottom:30px}
+:is(#partners,#order,#contacts) #order .form-heading h3,:is(#partners,#order,#contacts)#order .form-heading h3{font-family:Onest,sans-serif;font-size:clamp(1.65rem,2.7vw,2.55rem);line-height:1.1;letter-spacing:-.06em;margin:0}
+:is(#partners,#order,#contacts) #order .form-heading p,:is(#partners,#order,#contacts)#order .form-heading p{max-width:480px;margin:0;color:var(--muted);font-size:.95rem;line-height:1.6}
+:is(#partners,#order,#contacts) #order .form-grid,:is(#partners,#order,#contacts)#order .form-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px}
+:is(#partners,#order,#contacts) #order .field,:is(#partners,#order,#contacts)#order .field,:is(#partners,#order,#contacts) #order .consent-field,:is(#partners,#order,#contacts)#order .consent-field{min-width:0}
+:is(#partners,#order,#contacts) #order .field.full,:is(#partners,#order,#contacts)#order .field.full,:is(#partners,#order,#contacts) #order .consent-field.full,:is(#partners,#order,#contacts)#order .consent-field.full{grid-column:1/-1}
+:is(#partners,#order,#contacts) #order .field label,:is(#partners,#order,#contacts)#order .field label,:is(#partners,#order,#contacts) #order .choice-field legend,:is(#partners,#order,#contacts)#order .choice-field legend{font-size:.85rem;text-transform:none;letter-spacing:0;color:var(--ink);font-weight:500;margin-bottom:9px}
+:is(#partners,#order,#contacts) #order .required-mark,:is(#partners,#order,#contacts)#order .required-mark{color:var(--coral);margin-left:4px}
+:is(#partners,#order,#contacts) #order .input-shell,:is(#partners,#order,#contacts)#order .input-shell{position:relative}
+:is(#partners,#order,#contacts) #order .input-icon,:is(#partners,#order,#contacts)#order .input-icon{position:absolute;left:18px;top:20px;width:20px;height:20px;fill:none;stroke:var(--blue);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+:is(#partners,#order,#contacts) #order .field input:not([type=radio]):not([type=checkbox]),:is(#partners,#order,#contacts)#order .field input:not([type=radio]):not([type=checkbox]),:is(#partners,#order,#contacts) #order .field select,:is(#partners,#order,#contacts)#order .field select,:is(#partners,#order,#contacts) #order .field textarea,:is(#partners,#order,#contacts)#order .field textarea{min-height:60px;padding:16px 18px 16px 50px;border:1px solid #cfdef1;border-radius:16px;background:rgba(250,253,255,.92);font-size:1rem;transition:border-color .2s,box-shadow .2s}
+:is(#partners,#order,#contacts) #order .field select,:is(#partners,#order,#contacts)#order .field select{padding-right:38px}
+:is(#partners,#order,#contacts) #order .field textarea,:is(#partners,#order,#contacts)#order .field textarea{min-height:128px;line-height:1.6}
+:is(#partners,#order,#contacts) #order .field input::placeholder,:is(#partners,#order,#contacts)#order .field input::placeholder,:is(#partners,#order,#contacts) #order .field textarea::placeholder,:is(#partners,#order,#contacts)#order .field textarea::placeholder{color:#859ab4;opacity:1}
+:is(#partners,#order,#contacts) #order .field input:focus,:is(#partners,#order,#contacts)#order .field input:focus,:is(#partners,#order,#contacts) #order .field select:focus,:is(#partners,#order,#contacts)#order .field select:focus,:is(#partners,#order,#contacts) #order .field textarea:focus,:is(#partners,#order,#contacts)#order .field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(23,92,255,.1)}
+:is(#partners,#order,#contacts) #order .field input[aria-invalid=true],:is(#partners,#order,#contacts)#order .field input[aria-invalid=true]{border-color:#bf4d60;box-shadow:0 0 0 3px rgba(255,91,94,.06)}
+:is(#partners,#order,#contacts) #order .field .field-error,:is(#partners,#order,#contacts)#order .field .field-error{min-height:1.3em;margin-top:6px;line-height:1.3}
+:is(#partners,#order,#contacts) #order .choice-field,:is(#partners,#order,#contacts)#order .choice-field{padding:18px 20px 10px;border:1px solid #cfdef1;border-radius:16px;background:rgba(250,253,255,.92)}
+:is(#partners,#order,#contacts) #order .choice-field legend,:is(#partners,#order,#contacts)#order .choice-field legend{padding:0 6px;margin-left:-6px;margin-bottom:0}
+:is(#partners,#order,#contacts) #order .choice-options,:is(#partners,#order,#contacts)#order .choice-options{gap:10px}
+:is(#partners,#order,#contacts) #order .choice-option,:is(#partners,#order,#contacts)#order .choice-option{margin:0}
+:is(#partners,#order,#contacts) #order .choice-option span,:is(#partners,#order,#contacts)#order .choice-option span{min-height:46px;padding:11px 17px;font-weight:500;border-color:#cfdef1;background:#fff}
+:is(#partners,#order,#contacts) #order .choice-option input:checked+span,:is(#partners,#order,#contacts)#order .choice-option input:checked+span{border-color:var(--blue);background:#eaf2ff;color:var(--blue);box-shadow:0 0 0 1px var(--blue)}
+:is(#partners,#order,#contacts) #order .choice-field.invalid,:is(#partners,#order,#contacts)#order .choice-field.invalid{border-color:#bf4d60}
+:is(#partners,#order,#contacts) #order .choice-field.invalid .choice-options,:is(#partners,#order,#contacts)#order .choice-field.invalid .choice-options{box-shadow:none}
+:is(#partners,#order,#contacts) #order .form-bottom,:is(#partners,#order,#contacts)#order .form-bottom{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;align-items:center;margin-top:24px}
+:is(#partners,#order,#contacts) #order .consent-field,:is(#partners,#order,#contacts)#order .consent-field{margin:0}
+:is(#partners,#order,#contacts) #order .consent-label,:is(#partners,#order,#contacts)#order .consent-label{font-size:.88rem;gap:12px}
+:is(#partners,#order,#contacts) #order .consent-label input,:is(#partners,#order,#contacts)#order .consent-label input{inline-size:22px;block-size:22px;margin-top:0}
+:is(#partners,#order,#contacts) #order .consent-field .field-error,:is(#partners,#order,#contacts)#order .consent-field .field-error{margin-left:34px;line-height:1.4}
+:is(#partners,#order,#contacts) #order .form .button,:is(#partners,#order,#contacts)#order .form .button{min-height:60px;margin:0;border-radius:999px;background:linear-gradient(110deg,#3989ff,var(--blue));color:#fff;box-shadow:0 10px 24px rgba(23,92,255,.12);font-size:.96rem;letter-spacing:0;text-transform:none;display:flex;justify-content:center;gap:16px}
+:is(#partners,#order,#contacts) #order .form .button::before,:is(#partners,#order,#contacts)#order .form .button::before,:is(#partners,#order,#contacts) #order .form .button::after,:is(#partners,#order,#contacts)#order .form .button::after{display:none}
+:is(#partners,#order,#contacts) #order .form .button:hover,:is(#partners,#order,#contacts)#order .form .button:hover{box-shadow:0 12px 28px rgba(23,92,255,.22)}
+:is(#partners,#order,#contacts) #order .form .button:focus-visible,:is(#partners,#order,#contacts)#order .form .button:focus-visible{outline:3px solid rgba(23,92,255,.3);outline-offset:4px}
+:is(#partners,#order,#contacts) #order .form .button svg,:is(#partners,#order,#contacts)#order .form .button svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6}
+:is(#partners,#order,#contacts) #order .form-status,:is(#partners,#order,#contacts)#order .form-status{margin-top:16px;line-height:1.5;min-height:24px}
+@media(max-width:1120px){:is(#partners,#order,#contacts) #order .order-intro,:is(#partners,#order,#contacts)#order .order-intro{display:flex;flex-direction:column}
+:is(#partners,#order,#contacts) #order .order-intro>.label,:is(#partners,#order,#contacts)#order .order-intro>.label{order:0}
+:is(#partners,#order,#contacts) #order .order-intro>h2,:is(#partners,#order,#contacts)#order .order-intro>h2{order:1}
+:is(#partners,#order,#contacts) #order .order-intro>.contact-copy,:is(#partners,#order,#contacts)#order .order-intro>.contact-copy{order:2}
+:is(#partners,#order,#contacts) #order .order-textile,:is(#partners,#order,#contacts)#order .order-textile{position:relative;order:3;right:auto;top:auto;align-self:flex-end;width:min(640px,100%);height:310px;margin-top:6px;z-index:0;mask-image:linear-gradient(to right,transparent,#000 12%),linear-gradient(to bottom,transparent,#000 12%,#000 85%,transparent)}
+:is(#partners,#order,#contacts) #order .order-facts,:is(#partners,#order,#contacts)#order .order-facts{order:4;width:100%;margin-top:18px}
+:is(#partners,#order,#contacts) #order .order-intro h2,:is(#partners,#order,#contacts)#order .order-intro h2{max-width:680px}
+:is(#partners,#order,#contacts) #order .order-facts,:is(#partners,#order,#contacts)#order .order-facts{max-width:850px}}
+@media(max-width:720px){:is(#partners,#order,#contacts) #order .order-intro,:is(#partners,#order,#contacts)#order .order-intro{padding-bottom:28px}
+:is(#partners,#order,#contacts) #order .order-intro h2,:is(#partners,#order,#contacts)#order .order-intro h2{font-size:clamp(3.2rem,12vw,5rem)}
+:is(#partners,#order,#contacts) #order .order-textile,:is(#partners,#order,#contacts)#order .order-textile{right:auto;top:auto;width:100%;height:225px;margin-top:4px}
+:is(#partners,#order,#contacts) #order .order-facts,:is(#partners,#order,#contacts)#order .order-facts{grid-template-columns:1fr;gap:12px;margin-top:24px}
+:is(#partners,#order,#contacts) #order .order-fact,:is(#partners,#order,#contacts)#order .order-fact{min-height:100px;padding:18px 20px}
+:is(#partners,#order,#contacts) #order .form,:is(#partners,#order,#contacts)#order .form{padding:24px 18px;border-radius:24px}
+:is(#partners,#order,#contacts) #order .form-heading,:is(#partners,#order,#contacts)#order .form-heading{grid-template-columns:1fr;gap:12px;margin-bottom:24px}
+:is(#partners,#order,#contacts) #order .form-grid,:is(#partners,#order,#contacts)#order .form-grid,:is(#partners,#order,#contacts) #order .form-bottom,:is(#partners,#order,#contacts)#order .form-bottom{grid-template-columns:minmax(0,1fr)}
+:is(#partners,#order,#contacts) #order .field.full,:is(#partners,#order,#contacts)#order .field.full,:is(#partners,#order,#contacts) #order .consent-field.full,:is(#partners,#order,#contacts)#order .consent-field.full{grid-column:auto}
+:is(#partners,#order,#contacts) #order .choice-field,:is(#partners,#order,#contacts)#order .choice-field{padding:16px 14px 10px}
+:is(#partners,#order,#contacts) #order .choice-options,:is(#partners,#order,#contacts)#order .choice-options{gap:8px}
+:is(#partners,#order,#contacts) #order .choice-option span,:is(#partners,#order,#contacts)#order .choice-option span{padding:10px 12px;font-size:.85rem}
+:is(#partners,#order,#contacts) #order .field input:not([type=radio]):not([type=checkbox]),:is(#partners,#order,#contacts)#order .field input:not([type=radio]):not([type=checkbox]),:is(#partners,#order,#contacts) #order .field select,:is(#partners,#order,#contacts)#order .field select,:is(#partners,#order,#contacts) #order .field textarea,:is(#partners,#order,#contacts)#order .field textarea{padding-left:44px}
+:is(#partners,#order,#contacts) #order .input-icon,:is(#partners,#order,#contacts)#order .input-icon{left:14px}
+:is(#partners,#order,#contacts) #order .form-bottom,:is(#partners,#order,#contacts)#order .form-bottom{gap:18px;margin-top:20px}}
+#order .button svg{display:block}#partners .wrap,#order .wrap,#contacts .wrap{max-width:none}#partners,#order,#contacts{--max:1560px;--ease:cubic-bezier(.2,.8,.2,1)}</style><style id="original-hero-type">#hero-title{font-family:Onest,sans-serif;font-size:clamp(3.35rem,7.5vw,8.4rem);font-weight:600;line-height:.82;letter-spacing:-.085em;margin:28px 0 30px;color:#0b2038}#hero-title span{display:block}#hero-title .stroke{color:transparent;-webkit-text-stroke:1.5px #175cff}#hero-title .accent{color:#175cff}@media(max-width:720px){#hero-title{font-size:clamp(3rem,16vw,5.4rem);margin:24px 0}}</style><style id="production-visual-update">
+.hero-visual{padding-bottom:0}.hero-photo{height:580px}.hero-photo img{object-position:50% 45%}
+.production-assurances{color:var(--muted);font-size:1rem;line-height:1.7;margin:0 0 30px}
+.process-tabs{grid-row:2;padding:22px;gap:12px;border-bottom:0;border-top:1px solid var(--line);scroll-snap-type:x mandatory;scroll-padding:22px}
+.process-tab{position:relative;flex:0 0 144px;display:grid;grid-template-columns:24px 1fr;gap:8px;padding:0 0 12px;border:0;border-bottom:3px solid transparent;align-content:start;scroll-snap-align:start;text-align:left;line-height:1.3}
+.process-tab img{grid-column:1/-1;width:144px;height:96px;object-fit:cover;border-radius:3px;filter:saturate(.75);transition:filter .2s,opacity .2s;opacity:.75}
+.process-tab strong{font-size:.875rem}.process-tab span{font-size:.875rem}
+.process-tab.active img,.process-tab:hover img{filter:none;opacity:1}.process-tab.active{border-bottom-color:var(--blue)}
+.process-tab:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.process-media{grid-column:1;grid-row:1}.process-copy-card{grid-column:2;grid-row:1}
+.quality-card{overflow:hidden;padding:0;display:flex;flex-direction:column;justify-content:flex-start;gap:0}
+.quality-detail{height:180px;overflow:hidden;order:-1;margin-bottom:24px}.quality-detail img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.quality-card:hover .quality-detail img{transform:scale(1.04)}.quality-card>span{padding:0 28px}.quality-card>div:not(.quality-detail){padding:0 28px 28px}
+@media(max-width:720px){.hero-visual{padding-bottom:0}.hero-photo{height:440px}.process-media{grid-column:1;grid-row:1}.process-copy-card{grid-column:1;grid-row:2}.process-tabs{grid-row:3;padding:18px;scroll-padding:18px}.process-tab{flex-basis:128px}.process-tab img{width:128px;height:88px}.quality-detail{height:190px}}
+@media(prefers-reduced-motion:reduce){.quality-detail img{transition:none}}
+</style><style id="approved-benefits-contacts">
+#quality .quality-detail{height:auto;overflow:visible}#quality .quality-detail img{display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:auto;transform:none}#quality .quality-card:hover .quality-detail img{transform:none}
+#contacts.contacts-approved{padding:76px 0;background:#f2f8ff;color:#0b2038;overflow:hidden}
+#contacts .connect-wrap{max-width:1560px;padding-inline:28px;margin:auto}
+#contacts .connect-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,.85fr);gap:32px;align-items:center}
+#contacts .connect-photo{margin:0;min-width:0;border-radius:24px;overflow:hidden;background:#eaf3fd}
+#contacts .connect-photo img{display:block;width:100%;height:auto;object-fit:contain}
+#contacts .connect-center{min-width:0;text-align:center;padding:10px 0}
+#contacts h2{font-family:Onest,Arial,sans-serif;font-weight:600;font-size:clamp(2.8rem,5.7vw,5.5rem);letter-spacing:-.06em;line-height:1.1;margin:0 0 40px}
+#contacts .connect-phone{display:flex;justify-content:center;align-items:center;gap:14px;font-family:Onest,Arial,sans-serif;font-weight:600;font-size:clamp(1.2rem,2.35vw,2.3rem);letter-spacing:-.035em;white-space:nowrap;color:#0b2038}
+#contacts .connect-icon{width:58px;height:58px;flex:0 0 58px;display:grid;place-items:center;border-radius:50%;background:#e4f0ff;color:#0b2038;overflow:hidden}
+#contacts .connect-icon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#contacts .connect-icon.telegram{background:#149de4;color:white}#contacts .connect-icon.telegram svg{fill:currentColor;stroke:none}
+#contacts .connect-icon.max{background:white}#contacts .connect-icon.max img{width:100%;height:100%;object-fit:contain}
+#contacts .connect-divider{width:60px;height:1px;background:#96b1dc;margin:30px auto}
+#contacts .connect-caption{font:500 1.6rem Onest,Arial,sans-serif;margin:0 0 20px}
+#contacts .connect-messengers{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#contacts .connect-messengers a{display:flex;align-items:center;justify-content:center;gap:12px;padding:12px;border:1px solid #175cff;border-radius:18px;background:#fff;color:#175cff;font-size:1.25rem;font-weight:600;transition:background .2s,box-shadow .2s}
+#contacts .connect-messengers a:hover{background:#eaf2ff;box-shadow:0 5px 18px #175cff14}
+#contacts .connect-description{font-size:.875rem;line-height:1.6;color:#53687f;margin:24px auto 12px;max-width:480px}
+#contacts .connect-project{font-size:.875rem;color:#175cff;text-decoration:underline;text-underline-offset:4px}
+#contacts .connect-location{display:grid;grid-template-columns:1.6fr 1fr;gap:0;margin-top:28px;border:1px solid #c3d7f6;border-radius:24px;background:white;overflow:hidden}
+#contacts .connect-map{position:relative;min-height:300px;background:#eaf2fa}#contacts .connect-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#contacts .connect-address{padding:24px;display:flex;flex-direction:column;gap:20px;justify-content:center;min-width:0}
+#contacts .connect-address-line,#contacts .connect-hours{display:flex;align-items:center;gap:16px;min-width:0}
+#contacts .connect-address strong{font-family:Onest,Arial,sans-serif;font-size:1.25rem;line-height:1.4;font-weight:600}
+#contacts .connect-address p{font-size:1rem;line-height:1.5;color:#53687f;margin:5px 0 0}
+#contacts .connect-symbol{font-size:2rem;width:48px;height:48px;display:grid;place-items:center;background:#edf5ff;border-radius:50%;flex-shrink:0}
+#contacts .connect-hours{border-top:1px solid #dce7f5;padding-top:20px}
+#contacts .connect-map-link{display:flex;justify-content:center;align-items:center;text-align:center;min-height:52px;padding:12px 18px;background:#175cff;border-radius:14px;color:white;font-size:1rem;font-weight:600}
+#contacts a:focus-visible{outline:3px solid #175cff;outline-offset:5px}
+@media(max-width:1100px){#contacts .connect-top{gap:20px;grid-template-columns:1fr 1.5fr .7fr}#contacts .connect-icon{width:44px;height:44px;flex-basis:44px}#contacts .connect-messengers a{font-size:1rem;gap:8px}#contacts h2{margin-bottom:28px}#contacts .connect-location{grid-template-columns:1.2fr 1fr}}
+@media(max-width:760px){#contacts.contacts-approved{padding:48px 0}#contacts .connect-wrap{padding-inline:20px}#contacts .connect-top{grid-template-columns:1fr 1fr;gap:24px}#contacts .connect-center{grid-column:1/-1;grid-row:1}#contacts .connect-photo{border-radius:18px;align-self:center}#contacts .connect-phone{font-size:clamp(1.15rem,5.2vw,1.7rem)}#contacts h2{font-size:3.2rem}#contacts .connect-caption{font-size:1.4rem}#contacts .connect-location{grid-template-columns:1fr;margin-top:24px}#contacts .connect-map{min-height:300px}#contacts .connect-address{padding:22px}#contacts .connect-address strong{font-size:1.1rem}}
+</style><style id="approved-order-form">
+#order#order .order-form-frame{display:grid;grid-template-columns:minmax(240px,.78fr) minmax(0,2.1fr);background:#0b2038;border-radius:18px;overflow:hidden;margin-top:12px;border:1px solid #0b2038}
+#order#order .order-form-sidebar{padding:44px 32px 0;background:#0b2038;color:#fff;display:flex;flex-direction:column;min-width:0}
+#order#order .order-form-sidebar h3{font-family:Onest,Arial,sans-serif;font-size:clamp(2.1rem,3.4vw,3.4rem);font-weight:600;line-height:1.1;letter-spacing:-.045em;margin:0 0 28px;color:white}
+#order#order .order-form-sidebar h3 span{color:#175cff;font-size:min(1em,41.55px,calc(3.25vw - 8.45px))}@media(max-width:1100px){#order#order .order-form-sidebar h3 span{font-size:min(1em,max(22.4px,calc(3.36vw - 6.36px)))}}@media(max-width:760px){#order#order .order-form-sidebar h3 span{font-size:min(1em,calc(12vw - 21.42px))}}@media(max-width:720px){#order#order .order-form-sidebar h3 span{font-size:min(1em,calc(13.04vw - 26.1px))}}#order#order .order-form-sidebar p{font-size:1.0625rem;line-height:1.65;color:#d6e4f7;margin:0 0 26px}
+#order#order .order-form-sidebar img{width:100%;height:auto;display:block;margin:auto 0 0;object-fit:contain}
+#order#order .form{border:0;border-radius:0;padding:32px 38px;background:white;box-shadow:none;min-width:0}
+#order#order .form-heading{display:block;margin-bottom:28px}#order#order .form-heading h3{font-size:clamp(1.6rem,2.5vw,2.6rem);font-weight:600;letter-spacing:-.045em}
+#order#order .form-heading p{max-width:none;font-size:.875rem;margin-top:10px}
+#order#order .form-grid{gap:15px 24px}#order#order .field>label,#order#order .choice-field legend{font-size:1rem;font-weight:600;color:#175cff;margin-bottom:9px}
+#order#order .input-icon{display:none}
+#order#order .field input:not([type=radio]):not([type=checkbox]),#order#order .field select,#order#order .field textarea{padding:13px 16px;min-height:50px;background:white;border-radius:6px;border:1px solid #c9d7e9;font-size:1rem;color:#0b2038}
+#order#order .field select{padding-right:34px}#order#order .field textarea{min-height:110px}
+#order#order .field small{font-size:.875rem}#order#order .field .field-error:empty{display:none}
+#order#order .choice-field{background:none;border:0;border-radius:0;padding:0;min-width:0}
+#order#order .choice-field legend{margin-left:0;padding:0;margin-bottom:12px}
+#order#order .choice-option{display:flex;align-items:center;gap:10px;min-height:44px;cursor:pointer;font-size:1rem;margin:0}
+#order#order .choice-option input{position:static;inline-size:22px;block-size:22px;opacity:1;pointer-events:auto;margin:0;flex-shrink:0;accent-color:#175cff}
+#order#order .choice-option span{display:block;padding:0;min-height:0;border:0;border-radius:0;background:none;color:#0b2038;box-shadow:none;font-weight:400;font-size:1rem;transform:none}
+#order#order .choice-option input:checked+span{background:none;border:0;box-shadow:none;color:#0b2038}
+#order#order .choice-options{gap:8px 24px}#order#order [data-choice-field="branding"] .choice-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 14px}
+#order#order [data-choice-field="branding"] .choice-option{padding:10px 14px;background:#eef5ff;border-radius:6px}
+#order#order [data-choice-field="branding"] .choice-option:has(input:checked){background:#dfebff;box-shadow:inset 0 0 0 1px #175cff}
+#order#order .form-bottom{grid-template-columns:1fr;gap:16px;margin-top:20px}
+#order#order .consent-label{font-size:.875rem;color:#0b2038}
+#order#order .form .button{width:100%;border-radius:6px;background:#175cff;min-height:54px;font-size:1.125rem;box-shadow:none}#order#order .form .button svg{display:none}
+#order#order .choice-field.invalid .choice-options{outline:1px solid #bf4d60;outline-offset:4px;border-radius:6px}
+@media(max-width:1100px){#order#order .order-form-frame{grid-template-columns:minmax(220px,.7fr) minmax(0,1.8fr)}#order#order .form{padding:28px}#order#order .order-form-sidebar{padding:32px 24px 0}#order#order [data-choice-field="branding"] .choice-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){#order#order .order-form-frame{grid-template-columns:1fr}#order#order .order-form-sidebar{display:grid;grid-template-columns:1fr 100px;gap:14px;padding:24px}#order#order .order-form-sidebar h3{font-size:2rem;margin:0}#order#order .order-form-sidebar p{grid-column:1;margin:0;font-size:1rem}#order#order .order-form-sidebar img{grid-column:2;grid-row:1/3;margin:0;align-self:center}#order#order .form{padding:24px 20px}#order#order .form-grid{grid-template-columns:1fr}#order#order .form-heading h3{font-size:1.7rem}#order#order [data-choice-field="branding"] .choice-options{grid-template-columns:repeat(2,minmax(0,1fr))}#order#order [data-choice-field="branding"] .choice-option{padding:9px;gap:8px}#order#order .choice-option span{font-size:.875rem}}
+</style></head><body id="top"><header class="nav"><div class="wrap nav-shell"><a class="brand-logo" href="#top" aria-label="ШитьЁ — на главную"><img src="assets/photo-v12/logo-shityo.webp" alt="ШитьЁ"></a><nav class="nav-links" aria-label="Навигация"><a href="#production">Производство</a><a href="#catalog">Направления</a><a href="#quality">Преимущества</a><a href="#partners">Партнёры</a><a href="#contacts">Контакты</a></nav><a class="nav-phone" href="tel:+79855719888">+7 (985) 571-98-88</a><a class="button" href="#lead-form">Отправить заявку</a><button id="menu" class="menu" aria-label="Открыть меню" aria-expanded="false">Меню</button></div></header><main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <div class="hero-kicker">Контрактное производство · Обнинск</div>
+          <h1 class="hero-title" id="hero-title"><span>Идея.</span><span class="stroke">Ткань.</span><span class="accent">Тираж.</span></h1>
+          <p class="hero-copy">Берём на себя весь цикл производства одежды: разрабатываем лекала, шьём образец, выпускаем серийную партию, наносим брендирование, маркируем и доставляем.</p>
+          <div class="hero-actions">
+            <a class="button coral magnetic" href="#lead-form">Отправить заявку</a>
+            <a class="button light magnetic" href="#production">Как мы работаем</a>
+          </div>
+
+        </div>
+        <div class="hero-visual" id="hero-visual">
+          
+          <div class="hero-photo"><img src="assets/photo-v12/hero-white-hoodie.webp" alt="Швейное производство «ШитьЁ» — утверждённый визуал Hero"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="ribbon" aria-label="Возможности производства">
+      <div class="ribbon-track">
+        <span>Лекала</span><span>Пошив образца</span><span>Раскрой</span><span>Серийный пошив</span><span>Вышивка</span><span>Термопечать</span><span>Сублимация</span><span>Шелкография</span><span>Вязка</span><span>ОТК</span><span>Упаковка</span><span>Доставка</span>
+        <span>Лекала</span><span>Пошив образца</span><span>Раскрой</span><span>Серийный пошив</span><span>Вышивка</span><span>Термопечать</span><span>Сублимация</span><span>Шелкография</span><span>Вязка</span><span>ОТК</span><span>Упаковка</span><span>Доставка</span>
+      </div>
+    </div>
+
+    <section class="facts section-pad">
+      <div class="wrap facts-grid">
+        <div>
+          <div class="label reveal">Производственная система</div>
+          <h2 class="section-title reveal">Не просто шьём.<br>Управляем всем циклом.</h2>
+        </div>
+        <div class="facts-copy">
+          <p class="reveal">Современное оборудование и команда технологов, конструкторов, дизайнеров и швей. От идеи до готовой партии — у одного подрядчика.</p>
+          <p class="production-assurances">Собственное производство · Материалы клиента или наши · Контроль каждого этапа</p>
+          <div class="fact-cards">
+            <article class="fact-card reveal"><b>2013</b><span>работаем на рынке</span></article>
+            <article class="fact-card reveal"><b>12</b><span>этапов полного цикла</span></article>
+            <article class="fact-card reveal"><b>1</b><span>подрядчик на весь цикл</span></article>
+            <article class="fact-card reveal"><b>40 000</b><span>изделий в месяц</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="production">
+      <div class="wrap">
+        <div class="section-intro">
+          <div><div class="label reveal">Интерактивный маршрут</div><h2 class="section-title reveal">12 этапов<br>одной партии</h2></div>
+        </div>
+        <div class="process-lab reveal">
+          <div class="process-tabs" role="tablist" aria-label="Этапы производства">
+            <button class="process-tab active" role="tab" aria-selected="true" data-stage="0"><img src="assets/photo-v12/process-01-patterns.webp" alt="" loading="lazy" width="144" height="96"><span>01</span><strong>Лекала</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="1"><img src="assets/photo-v12/process-02-sample.webp" alt="" loading="lazy" width="144" height="96"><span>02</span><strong>Образец</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="2"><img src="assets/photo-v12/process-03-cutting.webp" alt="" loading="lazy" width="144" height="96"><span>03</span><strong>Раскрой</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="3"><img src="assets/photo-v12/process-04-sewing.webp" alt="" loading="lazy" width="144" height="96"><span>04</span><strong>Пошив</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="4"><img src="assets/photo-v12/process-05-embroidery.webp" alt="" loading="lazy" width="144" height="96"><span>05</span><strong>Вышивка</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="5"><img src="assets/photo-v12/process-06-heatpress.webp" alt="" loading="lazy" width="144" height="96"><span>06</span><strong>Термопечать</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="6"><img src="assets/photo-v12/process-07-sublimation.webp" alt="" loading="lazy" width="144" height="96"><span>07</span><strong>Сублимация</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="7"><img src="assets/photo-v12/process-08-screen-printing.webp" alt="" loading="lazy" width="144" height="96"><span>08</span><strong>Шелкография</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="8"><img src="assets/photo-v12/process-09-knitting.webp" alt="" loading="lazy" width="144" height="96"><span>09</span><strong>Вязка</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="9"><img src="assets/photo-v12/process-10-quality.webp" alt="" loading="lazy" width="144" height="96"><span>10</span><strong>ВТО и ОТК</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="10"><img src="assets/photo-v12/process-11-packaging-new.png" alt="" loading="lazy" width="144" height="96"><span>11</span><strong>Упаковка</strong></button>
+            <button class="process-tab" role="tab" aria-selected="false" data-stage="11"><img src="assets/photo-v12/process-12-delivery.webp" alt="" loading="lazy" width="144" height="96"><span>12</span><strong>Доставка</strong></button>
+          </div>
+          <div class="process-media">
+            <img class="process-image active" src="assets/photo-v12/process-01-patterns.webp" alt="Разработка лекал">
+            <img class="process-image" src="assets/photo-v12/process-02-sample.webp" alt="Пошив первого образца">
+            <img class="process-image" src="assets/photo-v12/process-03-cutting.webp" alt="Раскрой ткани">
+            <img class="process-image" src="assets/photo-v12/process-04-sewing.webp" alt="Серийный пошив одежды">
+            <img class="process-image" src="assets/photo-v12/process-05-embroidery.webp" alt="Машинная вышивка">
+            <img class="process-image" src="assets/photo-v12/process-06-heatpress.webp" alt="Термопечать на одежде">
+            <img class="process-image" src="assets/photo-v12/process-07-sublimation.webp" alt="Сублимационная печать на ткани">
+            <img class="process-image" src="assets/photo-v12/process-08-screen-printing.webp" alt="Шелкография на изделиях">
+            <img class="process-image" src="assets/photo-v12/process-09-knitting.webp" alt="Вязка изделий на промышленном оборудовании">
+            <img class="process-image" src="assets/photo-v12/process-10-quality.webp" alt="Влажно-тепловая обработка и контроль качества">
+            <img class="process-image" src="assets/photo-v12/process-11-packaging-new.png" alt="Упаковка и маркировка изделий">
+            <img class="process-image" src="assets/photo-v12/process-12-delivery.webp" alt="Доставка готовой партии">
+            <div class="process-counter"><b id="process-number">01</b><span>этап производства</span></div>
+          </div>
+          <div class="process-copy-card">
+            <article class="process-copy active"><small>01 · Конструкция</small><h3>Разработка лекал и градация</h3><p>Изучаем эскизы, фотографии или образцы, создаём базовое лекало, уточняем посадку и детали, масштабируем по размерному ряду и проводим финальную проверку.</p><ul><li>Анализ дизайна</li><li>Базовое лекало</li><li>Градация размеров</li></ul></article>
+            <article class="process-copy"><small>02 · Проверка идеи</small><h3>Пошив образца</h3><p>Создаём опытный образец, проводим примерку, устраняем недочёты и готовим модель к массовому производству.</p><ul><li>Примерка и корректировка</li><li>Финальное утверждение</li></ul></article>
+            <article class="process-copy"><small>03 · Точность</small><h3>Раскрой</h3><p>Высокоточный раскрой на современном оборудовании с подготовкой деталей к дальнейшему производственному потоку.</p></article>
+            <article class="process-copy"><small>04 · Серия</small><h3>Пошив партии</h3><p>Утвержденная модель запускается в производство. Текущая мощность — до 40 000 изделий в месяц.</p></article>
+            <article class="process-copy"><small>05 · Брендирование</small><h3>Машинная вышивка</h3><p>Наносим вышивку Ricoma на крой, готовую одежду, бейсболки и шевроны.</p><ul><li>Программа бесплатно от 500 изделий</li><li>Помощь с дизайном и цветами</li></ul></article>
+            <article class="process-copy"><small>06 · Нанесение</small><h3>Термопечать</h3><p>Переносим принты и элементы брендирования на крой и готовые изделия с помощью профессиональных термопрессов.</p></article>
+            <article class="process-copy"><small>07 · Полноцветная печать</small><h3>Сублимация</h3><p>Переносим полноцветное изображение на материал под воздействием температуры и давления. Получаем стойкий принт без дополнительного слоя на поверхности ткани.</p><ul><li>Полноцветная печать</li><li>Стойкое изображение</li><li>Термоперенос</li></ul></article>
+            <article class="process-copy"><small>08 · Тиражное нанесение</small><h3>Шелкография</h3><p>Наносим изображение через печатную сетку специальными красками. Метод подходит для тиражного нанесения плотных, ярких и износостойких принтов.</p><ul><li>Тиражная печать</li><li>Стойкие краски</li><li>Чёткий принт</li></ul></article>
+            <article class="process-copy"><small>09 · Трикотаж</small><h3>Вязка</h3><p>Вяжем детали изделий на промышленном вязальном оборудовании. Подбираем пряжу, плотность и параметры программы под конкретную модель.</p><p>Вязальное оборудование от 7 до 12 класса.</p><ul><li>Промышленная вязка</li><li>Подбор пряжи</li><li>Детали изделий</li></ul></article>
+            <article class="process-copy"><small>10 · Качество</small><h3>ВТО и ОТК</h3><p>Пар, тепло и давление придают изделию форму и товарный вид. Межоперационный и финальный контроль выявляет дефекты до отправки.</p><ul><li>Устранение заломов</li><li>Финальный контроль</li><li>Предотвращение брака</li></ul></article>
+            <article class="process-copy"><small>11 · Готовность к продаже</small><h3>Упаковка</h3><p>Маркировка, Честный знак, штрихкод, упаковка.</p><ul><li>Маркировка</li><li>Честный знак</li><li>Штрихкод</li><li>Упаковка</li></ul></article>
+            <article class="process-copy"><small>12 · Финал</small><h3>Доставка</h3><p>Отправляем упакованный заказ курьерскими службами или доставляем готовую продукцию на склады маркетплейсов. Работаем с обеими схемами отгрузки FBO/FBS.</p></article>
+            <div class="process-controls"><button class="round" id="process-prev" type="button">Назад</button><button class="round" id="process-next" type="button">Далее</button><button class="round" id="process-pause" type="button">Пауза</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section-pad" id="catalog">
+      <div class="wrap">
+        <div class="section-intro">
+          <div><div class="label reveal">Каталог возможностей</div><h2 class="section-title reveal">Одежда для<br>реальных задач</h2></div>
+          <p class="reveal">Подбираем конструкцию, технологию и материалы под назначение изделия, условия эксплуатации и требования бренда.</p>
+        </div>
+        <div class="catalog-tools reveal"><span class="catalog-note">Нажмите на карточку, чтобы посмотреть подробности.</span><a class="button light magnetic" href="#order">Отправить заявку</a></div>
+        <div class="catalog-grid">
+          <article class="category reveal" tabindex="0" role="button" aria-haspopup="dialog" data-title="Спецодежда" data-description="Разрабатываем и производим спецодежду с учётом условий эксплуатации, эргономики, требований предприятия и задач сотрудников." data-image="assets/category-v14/category-01-workwear.webp"><img src="assets/category-v14/category-01-workwear.webp" alt="Спецодежда" loading="lazy"><div class="category-content"><small>01 / 05</small><h3>Спецодежда</h3><p>Функциональная рабочая одежда под требования профессии и предприятия.</p></div></article>
+          <article class="category reveal" tabindex="0" role="button" aria-haspopup="dialog" data-title="Активный отдых" data-description="Производим спортивную и функциональную одежду для тренировок, туризма и активного отдыха с учётом комфорта, износостойкости и свободы движения." data-image="assets/category-v14/category-02-active.webp"><img src="assets/category-v14/category-02-active.webp" alt="Одежда для активного отдыха" loading="lazy"><div class="category-content"><small>02 / 05</small><h3>Активный отдых</h3><p>Спортивная и функциональная одежда для активного движения и отдыха.</p></div></article>
+          <article class="category reveal" tabindex="0" role="button" aria-haspopup="dialog" data-title="Мужская и женская одежда" data-description="Производим мужскую и женскую одежду под задачи бренда — от базовых моделей до более сложных серийных изделий." data-image="assets/category-v14/category-03-adults.webp"><img src="assets/category-v14/category-03-adults.webp" alt="Мужская и женская одежда" loading="lazy"><div class="category-content"><small>03 / 05</small><h3>Мужская и женская одежда</h3><p>Повседневные и коллекционные модели для мужчин и женщин.</p></div></article>
+          <article class="category reveal" tabindex="0" role="button" aria-haspopup="dialog" data-title="Детская одежда" data-description="Производим детскую одежду с учётом комфорта, свободы движения, особенностей посадки и требований к материалам." data-image="assets/category-v14/category-04-children.webp"><img src="assets/category-v14/category-04-children.webp" alt="Детская одежда" loading="lazy"><div class="category-content"><small>04 / 05</small><h3>Детская одежда</h3><p>Комфортная одежда для детей с вниманием к посадке и материалам.</p></div></article>
+          <article class="category reveal" tabindex="0" role="button" aria-haspopup="dialog" data-title="Домашняя одежда" data-description="Производим домашнюю одежду: пижамы, сорочки и халаты. Подбираем материалы, посадку и технологию пошива под концепцию бренда." data-image="assets/category-v14/category-05-homewear.webp"><img src="assets/category-v14/category-05-homewear.webp" alt="Домашняя одежда: пижамы, сорочки и халаты" loading="lazy"><div class="category-content"><small>05 / 05</small><h3>Домашняя одежда</h3><p>Пижамы, сорочки и халаты для комфортной домашней коллекции.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="category-dialog" id="category-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Закрыть">×</button>
+      <div class="dialog-grid"><img class="dialog-image" id="dialog-image" alt=""><div class="dialog-copy"><small>Производственная категория</small><h3 id="dialog-title"></h3><p id="dialog-description"></p><a class="button coral magnetic" href="#order" id="dialog-cta">Отправить заявку</a></div></div>
+    </dialog>
+
+    <section class="quality section-pad" id="quality" aria-labelledby="quality-title">
+      <div class="wrap">
+        <div class="quality-head">
+          <div><h2 class="section-title reveal" id="quality-title">Почему выбирают нас</h2><p class="quality-subtitle">Контроль без разрывов</p></div>
+          <p class="reveal">Контролируем качество пошива и весь путь заказа — от сырья до склада. Один подрядчик отвечает за результат целиком.</p>
+        </div>
+        <div class="quality-grid">
+          <article class="quality-card reveal"><div class="quality-detail"><img src="assets/benefits/benefit-01.png" alt="Проверка готового изделия" loading="lazy"></div><span>01 / КАЧЕСТВО</span><div><h3>Строгий контроль</h3><p>Проверяем каждый этап для стабильного качества всей партии.</p></div></article>
+          <article class="quality-card reveal"><div class="quality-detail"><img src="assets/benefits/benefit-02.png" alt="Ткань перед раскроем" loading="lazy"></div><span>02 / СЫРЬЁ</span><div><h3>Материалы</h3><p>Работаем на своём сырье и сырье клиента, используем базу проверенных поставщиков.</p></div></article>
+          <article class="quality-card reveal"><div class="quality-detail"><img src="assets/benefits/benefit-03.png" alt="Вышивальное оборудование" loading="lazy"></div><span>03 / ТЕХНОЛОГИИ</span><div><h3>Оборудование</h3><p>Современная техника помогает точно соблюдать заданные стандарты.</p></div></article>
+          <article class="quality-card reveal"><div class="quality-detail"><img src="assets/benefits/benefit-04.png" alt="Работа швеи" loading="lazy"></div><span>04 / КОМАНДА</span><div><h3>Опытные специалисты</h3><p>Технологи, конструкторы, дизайнеры и швеи с многолетним опытом.</p></div></article>
+          <article class="quality-card reveal"><div class="quality-detail"><img src="assets/benefits/benefit-05.png" alt="Работа с лекалами" loading="lazy"></div><span>05 / ПЛАН</span><div><h3>Соблюдение сроков</h3><p>Планируем и управляем процессом от лекал до финальной отделки.</p></div></article>
+          <article class="quality-card reveal"><div class="quality-detail"><img src="assets/benefits/benefit-06.png" alt="Маркировка и упаковка" loading="lazy"></div><span>06 / ФИНАЛ</span><div><h3>Фулфилмент</h3><p>Сборка, упаковка, маркировка, «Честный ЗНАК» и доставка на склады маркетплейсов.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners section-pad" id="partners">
+      <div class="wrap">
+        <div class="partners-head">
+          <div><div class="label reveal">Наши партнёры</div><h2 class="section-title reveal">Бренды, которые<br>шьют с нами</h2></div>
+          <p class="reveal">Работаем с российскими брендами одежды: от первых партий до регулярного серийного производства.</p>
+        </div>
+        <div class="partners-grid" aria-label="Партнёры производства">
+          <article class="partner-card brand-card reveal" aria-label="Zipkidz"><img class="brand-card-image" src="assets/partners-v15/zipkidz-card.png" alt="ZIPKIDZ" loading="lazy"></article>
+          <article class="partner-card brand-card reveal" aria-label="Moorka"><img class="brand-card-image" src="assets/partners-v15/moorka-card.png" alt="MOORKA" loading="lazy"></article>
+          <article class="partner-card brand-card reveal" aria-label="Re Plain"><img class="brand-card-image" src="assets/partners-v15/replain-card.png" alt="RE PLAIN" loading="lazy"></article>
+          <article class="partner-card brand-card reveal" aria-label="Darkone"><img class="brand-card-image" src="assets/partners-v15/darkone-card.png" alt="DARKONE" loading="lazy"></article>
+          <article class="partner-card brand-card reveal" aria-label="Same"><img class="brand-card-image" src="assets/partners-v15/same-card.png" alt="same!" loading="lazy"></article>
+          <article class="partner-card brand-card reveal" aria-label="LaFamily"><img class="brand-card-image" src="assets/partners-v16/lafamily new.png" alt="LAFAMILY" loading="lazy"></article>
+          <article class="partner-card logo-card reveal" aria-label="8BASE"><img class="partner-logo" src="assets/partners-v15/8base.png" alt="8BASE" loading="lazy"></article>
+          <article class="partner-card logo-card reveal" aria-label="PROTREND"><img class="partner-logo" src="assets/partners-v15/protrend.png" alt="PROTREND" loading="lazy"></article>
+          <article class="partner-card logo-card reveal" aria-label="HYPEGRL"><img class="partner-logo" src="assets/partners-v15/hypegrl.png" alt="HYPEGRL" loading="lazy"></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="order">
+      <div class="wrap contact-grid">
+        <div class="order-intro">
+          <div class="order-textile" aria-hidden="true"><img src="assets/application-v16/textile-reference.png" alt="" loading="lazy"></div>
+          <div class="label reveal">Новый заказ</div>
+          <h2 class="reveal">От идеи<br>до тиража</h2>
+          <p class="contact-copy reveal">Расскажите, что нужно произвести и в каком количестве. Уточним исходные данные, технологию и подготовим расчёт.</p>
+          <div class="order-facts reveal"><div class="order-fact"><svg class="fact-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 9-5 9 5-9 5-9-5Zm0 5 9 5 9-5M3 17l9 5 9-5"/></svg><b>12</b><span>этапов полного цикла</span></div><div class="order-fact"><svg class="fact-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V12m7 8V4m7 16V8"/></svg><b>40 000</b><span>изделий в месяц — текущая мощность</span></div></div>
+        </div>
+        <div class="order-form-frame"><aside class="order-form-sidebar"><h3>От эскиза<br><span>до производства</span></h3><p>Производим одежду для брендов, бизнеса и мерча — качественно, в срок и с вниманием к каждой детали.</p><img src="assets/application-v16/form-clothing-art.png" alt="" aria-hidden="true" loading="lazy"></aside><form class="form reveal" id="lead-form" method="post" action="https://script.google.com/macros/s/AKfycbz20VptJkyBgD3egWqxqRc1ksMPiqhotH1lg1x_sQkz-sAXdpEQK5z_r7Os5CM_m5Uq2g/exec" target="lead-submit-frame" novalidate>
+          <input type="hidden" id="client_nonce" name="client_nonce" value="">
+          <div class="form-heading"><h3>Оставьте заявку</h3><p>Чем подробнее опишете задачу, тем точнее будет расчёт и предложение.</p></div>
+          <div class="form-grid">
+            <div class="field"><label for="product">Что нужно произвести<span class="required-mark" aria-hidden="true">*</span></label><div class="input-shell"><svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 9-5 9 5v10l-9 5-9-5V7Zm0 0 9 5 9-5M12 12v10M7 4l10 6"/></svg><input id="product" name="product" required aria-describedby="product-error" placeholder="Например: футболки, худи, костюмы…"></div><small class="field-error" id="product-error" aria-live="polite"></small></div>
+            <div class="field"><label for="qty">Количество<span class="required-mark" aria-hidden="true">*</span></label><div class="input-shell"><svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 3-2 18M17 3l-2 18M3 9h18M2 15h18"/></svg><input id="qty" name="qty" type="number" min="1" step="1" required inputmode="numeric" aria-describedby="qty-help qty-error" placeholder="Например: 500"></div><small id="qty-help">Введите целое число от 1.</small><small class="field-error" id="qty-error" aria-live="polite"></small></div>
+            <div class="field"><label for="name">Имя<span class="required-mark" aria-hidden="true">*</span></label><div class="input-shell"><svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><input id="name" name="name" required autocomplete="name" aria-describedby="name-error" placeholder="Как к вам обращаться?"></div><small class="field-error" id="name-error" aria-live="polite"></small></div>
+            <div class="field"><label for="contactValue">Телефон или Telegram<span class="required-mark" aria-hidden="true">*</span></label><div class="input-shell"><svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21 3-7 18-4-7-7-4 18-7ZM10 14l11-11"/></svg><input id="contactValue" name="contact" required autocomplete="tel" maxlength="33" aria-describedby="contact-error" placeholder="+7… или @username"></div><small class="field-error" id="contact-error" aria-live="polite"></small></div>
+
+
+
+
+
+            <fieldset class="field choice-field" data-choice-field="patterns">
+              <legend>Есть готовые лекала?</legend>
+              <div class="choice-options">
+                <label class="choice-option"><input type="radio" name="patterns" value="Да" required><span>Да</span></label>
+                <label class="choice-option"><input type="radio" name="patterns" value="Нет" required><span>Нет</span></label>
+              </div>
+              <small class="field-error" id="patterns-error" aria-live="polite"></small>
+            </fieldset>
+            <fieldset class="field choice-field" data-choice-field="material">
+              <legend>Материал</legend>
+              <div class="choice-options">
+                <label class="choice-option"><input type="radio" name="material" value="Наш" required><span>Наш</span></label>
+                <label class="choice-option"><input type="radio" name="material" value="Ваш" required><span>Ваш</span></label>
+                <label class="choice-option"><input type="radio" name="material" value="Нужно подобрать" required><span>Нужно подобрать</span></label>
+              </div>
+              <small class="field-error" id="material-error" aria-live="polite"></small>
+            </fieldset>
+            <div class="field full"><label for="service">Услуга</label><div class="input-shell"><svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6M9 2h6v4H9zM7 4H4v18h16V4h-3M8 11h8M8 16h8"/></svg><select id="service" name="service"><option>Комплексное производство</option><option>Разработка лекал</option><option>Пошив образца</option><option>Пошив партии</option><option>Вышивка</option><option>Маркировка и упаковка</option></select></div></div>
+            <fieldset class="field choice-field full" data-choice-field="branding">
+              <legend>Брендирование</legend>
+              <div class="choice-options">
+                <label class="choice-option"><input type="checkbox" name="branding" value="Вышивка"><span>Вышивка</span></label>
+                <label class="choice-option"><input type="checkbox" name="branding" value="Термопечать"><span>Термопечать</span></label>
+                <label class="choice-option"><input type="checkbox" name="branding" value="Сублимация"><span>Сублимация</span></label>
+                <label class="choice-option"><input type="checkbox" name="branding" value="Шелкография"><span>Шелкография</span></label>
+                <label class="choice-option"><input type="checkbox" name="branding" value="Шеврон"><span>Шеврон</span></label>
+                <label class="choice-option"><input type="checkbox" name="branding" value="Не требуется"><span>Не требуется</span></label>
+              </div>
+              <small>Можно выбрать несколько вариантов. «Не требуется» выбирается отдельно.</small>
+              <small class="field-error" id="branding-error" aria-live="polite"></small>
+            </fieldset>
+
+            <div class="field full"><label for="comment">Комментарий</label><div class="input-shell"><svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H4v20h16V8l-6-6Zm0 0v6h6M8 12h8M8 16h6"/></svg><textarea id="comment" name="comment" placeholder="Модель, сроки, размеры и другие детали…"></textarea></div></div>
+          </div>
+          
+          <div class="form-bottom">
+            <div class="consent-field" id="consent-field">
+              <label class="consent-label" for="consentPersonalData"><input id="consentPersonalData" name="consentPersonalData" type="checkbox" value="true" required aria-describedby="consent-error"><span>Даю согласие на обработку персональных данных</span></label>
+              <small class="field-error" id="consent-error" aria-live="polite"></small>
+            </div>
+          <button class="button magnetic" id="lead-submit" type="submit">Отправить заявку<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></button>
+          </div>
+          <small class="form-status" id="form-status">После отправки заявка автоматически попадёт в таблицу менеджера.</small>
+        </form></div>
+        <iframe name="lead-submit-frame" id="lead-submit-frame" title="Отправка заявки" style="display:none"></iframe>
+      </div>
+    </section>
+
+    <section class="contacts-approved" id="contacts" aria-labelledby="contacts-title">
+      <div class="wrap connect-wrap">
+        <div class="connect-top">
+          <figure class="connect-photo connect-left"><img src="assets/contact-v13/hoodie-stack.webp" alt="Стопка худи с фирменной вышивкой ШитьЁ" loading="lazy"></figure>
+          <div class="connect-center">
+            <h2 id="contacts-title">Контакты</h2>
+            <a class="connect-phone" href="tel:+79855719888"><span class="connect-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.7 2.8 9.2 7l-2 1.8c1.2 2.7 3.3 4.8 6 6l1.8-2 4.2 2.5-.7 3.2c-.2.9-1 1.5-1.9 1.5C9.7 20 4 14.3 4 7.4c0-.9.6-1.7 1.5-1.9l1.2-.3Z"/></svg></span><span>+7 (985) 571-98-88</span></a>
+            <div class="connect-divider"></div>
+            <p class="connect-caption">Напишите нам</p>
+            <div class="connect-messengers">
+              <a href="https://t.me/marysya_vladimirovna" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram"><span class="connect-icon telegram" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.7 3.5 17.9 20c-.2 1.2-.8 1.5-1.8.9l-4.3-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.4 8-7.2c.4-.3-.1-.5-.5-.2l-9.9 6.2-4.3-1.3c-1-.3-1-1 .2-1.5L19.4 5c.8-.3 1.5.2 1.3 1.5Z"/></svg></span><span>Telegram</span></a>
+              <a href="https://max.ru/u/f9LHodD0cOJJwPUcWdBJBUZo6jmQezcBhDqt18l9F0887FhfAUCxdN7lxVQ" target="_blank" rel="noopener noreferrer" aria-label="Открыть чат ШитьЁ в MAX"><span class="connect-icon max" aria-hidden="true"><img src="assets/contact-v13/max-logo.webp" alt=""></span><span>MAX</span></a>
+            </div>
+            <p class="connect-description">С удовольствием ответим на ваши вопросы, рассчитаем проект и поможем запустить производство одежды под вашим брендом.</p>
+            <a class="connect-project" href="#order">Давайте создадим вашу коллекцию</a>
+          </div>
+          <figure class="connect-photo connect-right"><img src="assets/contact-v13/white-hoodie-mannequin.webp" alt="Белый худи с вышивкой на манекене" loading="lazy"></figure>
+        </div>
+        <div class="connect-location">
+          <div class="connect-map"><iframe src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%9E%D0%B1%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%20121/2" title="Яндекс Карта: Обнинск, проспект Ленина, 121/2" loading="lazy" allowfullscreen></iframe></div>
+          <div class="connect-address">
+            <div class="connect-address-line"><span class="connect-symbol" aria-hidden="true">⌖</span><div><strong>проспект Ленина, 121/2</strong><p>Обнинск, Калужская область, 249038</p></div></div>
+            <div class="connect-hours"><span class="connect-symbol" aria-hidden="true">◷</span><div><strong>Пн–Пт: 9:00–18:00</strong><p>Сб–Вс: по договорённости</p></div></div>
+            <a class="connect-map-link" href="https://yandex.ru/maps/?text=%D0%9E%D0%B1%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%20121/2" target="_blank" rel="noopener noreferrer">Открыть в Яндекс Картах</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><footer><div class="wrap footer-inner"><a class="brand brand-logo" href="#top" aria-label="ШитьЁ — на главную"><img src="assets/photo-v12/logo-shityo.webp" alt="ШитьЁ — швейное производство"></a><small>© 2026 Швейное производство «ШитьЁ».</small><nav class="footer-links"><a href="#production">Производство</a><a href="#quality">Преимущества</a><a href="#partners">Партнёры</a><a href="#contacts">Контакты</a></nav></div></footer><script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.06});reveals.forEach(e=>observer.observe(e));
+const menu=document.getElementById('menu'),navigation=document.querySelector('.nav-links');menu.onclick=()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));navigation.classList.toggle('open',open)};navigation.querySelectorAll('a').forEach(a=>a.onclick=()=>{navigation.classList.remove('open');menu.setAttribute('aria-expanded','false')});
+const tabs=[...document.querySelectorAll('.process-tab')],images=[...document.querySelectorAll('.process-image')],copies=[...document.querySelectorAll('.process-copy')],pause=document.getElementById('process-pause');let stage=0,timer,visible=false,paused=reduce;
+function setStage(i){stage=(i+tabs.length)%tabs.length;tabs.forEach((t,j)=>{t.classList.toggle('active',j===stage);t.setAttribute('aria-selected',String(j===stage));t.tabIndex=j===stage?0:-1});images.forEach((im,j)=>im.classList.toggle('active',j===stage));copies.forEach((c,j)=>c.classList.toggle('active',j===stage));document.getElementById('process-number').textContent=String(stage+1).padStart(2,'0');const t=tabs[stage],box=t.parentElement;if(box.scrollWidth>box.clientWidth)box.scrollTo({left:t.offsetLeft-box.offsetLeft,behavior:reduce?'auto':'smooth'});pause.textContent=paused?'Продолжить':'Пауза'}
+function schedule(){clearTimeout(timer);if(visible&&!paused&&!document.hidden)timer=setTimeout(()=>{setStage(stage+1);schedule()},4000)}
+tabs.forEach((t,i)=>{t.onclick=()=>{paused=true;setStage(i);schedule()};t.onkeydown=e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();paused=true;setStage(stage+(e.key==='ArrowRight'?1:-1));tabs[stage].focus();schedule()}}});document.getElementById('process-prev').onclick=()=>{paused=true;setStage(stage-1);schedule()};document.getElementById('process-next').onclick=()=>{paused=true;setStage(stage+1);schedule()};pause.onclick=()=>{paused=!paused;setStage(stage);schedule()};document.addEventListener('click',e=>{if(paused&&!reduce&&!e.target.closest('.process-lab')){paused=false;setStage(stage);schedule()}});document.addEventListener('visibilitychange',schedule);new IntersectionObserver(es=>{visible=es[0].isIntersecting;schedule()},{threshold:.1}).observe(document.querySelector('.process-lab'));setStage(0);
+const dialog=document.getElementById('category-dialog');let trigger;
+document.querySelectorAll('.category').forEach(card=>{function open(){trigger=card;document.getElementById('dialog-image').src=card.dataset.image;document.getElementById('dialog-image').alt=card.dataset.title;document.getElementById('dialog-title').textContent=card.dataset.title;document.getElementById('dialog-description').textContent=card.dataset.description;dialog.showModal()}card.onclick=open;card.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}}});function close(){dialog.close();trigger?.focus()}dialog.querySelector('.dialog-close').onclick=close;dialog.onclick=e=>{if(e.target===dialog)close()};document.getElementById('dialog-cta').onclick=()=>dialog.close();
+    const leadForm=document.getElementById('lead-form'),leadStatus=document.getElementById('form-status'),leadButton=document.getElementById('lead-submit'),leadFrame=document.getElementById('lead-submit-frame'),leadNonceInput=document.getElementById('client_nonce'),nameInput=document.getElementById('name'),nameError=document.getElementById('name-error'),contactInput=document.getElementById('contactValue'),contactError=document.getElementById('contact-error'),productInput=document.getElementById('product'),productError=document.getElementById('product-error'),qtyInput=document.getElementById('qty'),qtyError=document.getElementById('qty-error'),consentInput=document.getElementById('consentPersonalData'),consentField=document.getElementById('consent-field'),consentError=document.getElementById('consent-error');
+    let leadSubmitting=false,leadMessageReceived=false,leadLoadCount=0,leadFallbackTimer=null,leadAwaitingConfirmation=false,leadNonce='',leadAckPollTimer=null;
+    const leadEndpoint=leadForm.action;
+    function createLeadNonce(){try{return crypto.randomUUID()}catch(_){return Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)+'-'+Math.random().toString(36).slice(2)}}
+    function leadAckKey(nonce){return 'shityoLeadAck:'+nonce}
+    function clearLeadAckPoll(){if(leadAckPollTimer){clearInterval(leadAckPollTimer);leadAckPollTimer=null}}
+    function handleLeadAckData(data){
+      if(!leadAwaitingConfirmation||!leadNonce||!data||typeof data!=='object')return false;
+      if(data.source!=='shityo-lead'||data.client_nonce!==leadNonce)return false;
+      if(data.pending===true)return false;
+      if(typeof data.ok!=='boolean')return false;
+      leadMessageReceived=true;
+      if(data.ok)leadFinish(true,'Спасибо! Заявка успешно отправлена. Мы свяжемся с вами для уточнения деталей.');
+      else leadFinish(false,data.message||'Не удалось отправить заявку. Позвоните нам или напишите в Telegram.');
+      leadNonce='';leadNonceInput.value='';
+      return true;
+    }
+    function consumeLeadAck(){
+      if(!leadAwaitingConfirmation||!leadNonce)return false;
+      try{
+        const key=leadAckKey(leadNonce),raw=localStorage.getItem(key);
+        if(!raw)return false;
+        localStorage.removeItem(key);
+        return handleLeadAckData(JSON.parse(raw));
+      }catch(_){return false}
+    }
+    window.shityoLeadAck=function(data){handleLeadAckData(data)};
+    function requestLeadAckJsonp(){
+      if(!leadAwaitingConfirmation||!leadNonce)return;
+      const script=document.createElement('script');
+      script.async=true;
+      script.src=leadEndpoint+(leadEndpoint.includes('?')?'&':'?')+'mode=status&nonce='+encodeURIComponent(leadNonce)+'&callback=shityoLeadAck&_='+Date.now();
+      script.onload=()=>script.remove();
+      script.onerror=()=>script.remove();
+      document.head.appendChild(script);
+    }
+    function startLeadAckPoll(){
+      clearLeadAckPoll();
+      requestLeadAckJsonp();
+      leadAckPollTimer=setInterval(()=>{if(consumeLeadAck()){clearLeadAckPoll();return}requestLeadAckJsonp()},1200)
+    }
+    function setContactError(message=''){contactError.textContent=message;contactInput.setAttribute('aria-invalid',message?'true':'false')}
+    function setInputError(input,error,message=''){error.textContent=message;input.setAttribute('aria-invalid',message?'true':'false')}
+    function setChoiceError(name,message=''){const field=leadForm.querySelector('[data-choice-field="'+name+'"]'),error=document.getElementById(name+'-error');field.classList.toggle('invalid',!!message);error.textContent=message}
+    function setConsentError(message=''){consentField.classList.toggle('invalid',!!message);consentInput.setAttribute('aria-invalid',message?'true':'false');consentError.textContent=message}
+    function formatRussianPhone(value){const digits=value.slice(2).replace(/\D/g,'').slice(0,10);let result='+7';if(digits.length)result+='('+digits.slice(0,3);if(digits.length>=3)result+=')';if(digits.length>3)result+=digits.slice(3,6);if(digits.length>6)result+='-'+digits.slice(6,8);if(digits.length>8)result+='-'+digits.slice(8,10);return result}
+    function contactIsValid(){const value=contactInput.value.trim();return /^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/.test(value)||/^@\S+$/.test(value)}
+    function quantityIsValid(){const value=qtyInput.value.trim(),qty=Number(value);return value!==''&&Number.isInteger(qty)&&qty>=1}
+    function choiceIsSelected(name){return !!leadForm.querySelector('input[name="'+name+'"]:checked')}
+    contactInput.addEventListener('input',()=>{const value=contactInput.value;if(!value){setContactError();return}if(value==='+'||value.startsWith('+7')){contactInput.value=value==='+'?value:formatRussianPhone(value);setContactError();return}if(value.startsWith('@')){setContactError();return}contactInput.value='';setContactError('Некорректный ввод')});
+    contactInput.addEventListener('blur',()=>{if(contactInput.value&&!contactIsValid())setContactError('Некорректный ввод')});
+    nameInput.addEventListener('input',()=>{if(nameInput.value.trim())setInputError(nameInput,nameError)});
+    productInput.addEventListener('input',()=>{if(productInput.value.trim())setInputError(productInput,productError)});
+    qtyInput.addEventListener('input',()=>{if(quantityIsValid())setInputError(qtyInput,qtyError)});
+    qtyInput.addEventListener('blur',()=>{if(qtyInput.value&&!quantityIsValid())setInputError(qtyInput,qtyError,'Введите целое количество от 1.')});
+    ['patterns','material'].forEach(name=>leadForm.querySelectorAll('input[name="'+name+'"]').forEach(input=>input.addEventListener('change',()=>setChoiceError(name))));
+    const brandingInputs=[...leadForm.querySelectorAll('input[name="branding"]')],brandingNone=brandingInputs.find(input=>input.value==='Не требуется');
+    brandingInputs.forEach(input=>input.addEventListener('change',()=>{if(input.checked){if(input===brandingNone)brandingInputs.forEach(option=>{if(option!==brandingNone)option.checked=false});else brandingNone.checked=false}if(choiceIsSelected('branding'))setChoiceError('branding')}));
+    consentInput.addEventListener('change',()=>{if(consentInput.checked)setConsentError()});
+    function clearLeadErrors(){setInputError(nameInput,nameError);setContactError();setInputError(productInput,productError);setInputError(qtyInput,qtyError);['patterns','material','branding'].forEach(name=>setChoiceError(name));setConsentError()}
+    function leadFinish(ok,message){clearTimeout(leadFallbackTimer);clearLeadAckPoll();leadSubmitting=false;leadAwaitingConfirmation=false;leadMessageReceived=true;leadButton.disabled=false;leadButton.textContent='Отправить заявку';leadStatus.textContent=message;leadStatus.style.color=ok?'#237b5a':'#a62b3e';if(ok){leadForm.reset();clearLeadErrors()}}
+    function leadResponseIsTrusted(event){
+      const data=event.data,origin=String(event.origin||'');
+      if(!leadAwaitingConfirmation||!data||typeof data!=='object'||data.source!=='shityo-lead'||typeof data.ok!=='boolean')return false;
+      if(!leadNonce||data.client_nonce!==leadNonce)return false;
+      // Google Apps Script HtmlService can report a googleusercontent/script.google.com origin
+      // or `null` when its sandboxed iframe posts the result. The one-time nonce prevents
+      // unrelated frames from spoofing a confirmation while a submission is pending.
+      if(origin&&origin!=='null'&&!/^https:\/\/([a-z0-9-]+\.)*(googleusercontent\.com|script\.google\.com)$/.test(origin))return false;
+      return true;
+    }
+    addEventListener('message',event=>{if(!leadResponseIsTrusted(event))return;handleLeadAckData(event.data)});
+    leadFrame.addEventListener('load',()=>{leadLoadCount++;consumeLeadAck()});
+    leadForm.addEventListener('submit',event=>{
+      if(leadSubmitting){event.preventDefault();return}
+      const missing=[],invalid=[],focusTargets=[];
+      clearLeadErrors();
+      if(!nameInput.value.trim()){missing.push('имя');setInputError(nameInput,nameError,'Введите имя.');focusTargets.push(nameInput)}
+      if(!contactInput.value.trim()){missing.push('телефон или ник в Telegram');setContactError('Введите номер телефона или ник в Telegram.');focusTargets.push(contactInput)}else if(!contactIsValid()){invalid.push('телефон или ник в Telegram');setContactError('Некорректный ввод.');focusTargets.push(contactInput)}
+      if(!productInput.value.trim()){missing.push('изделие');setInputError(productInput,productError,'Укажите изделие.');focusTargets.push(productInput)}
+      if(!qtyInput.value.trim()){missing.push('количество');setInputError(qtyInput,qtyError,'Введите количество.');focusTargets.push(qtyInput)}else if(!quantityIsValid()){invalid.push('количество');setInputError(qtyInput,qtyError,'Введите целое количество от 1.');focusTargets.push(qtyInput)}
+      [['patterns','лекала'],['material','материал'],['branding','брендирование']].forEach(([name,label])=>{if(!choiceIsSelected(name)){missing.push(label);setChoiceError(name,'Выберите один вариант.');focusTargets.push(leadForm.querySelector('input[name="'+name+'"]'))}});
+      if(!consentInput.checked){missing.push('согласие на обработку персональных данных');setConsentError('Необходимо дать согласие на обработку персональных данных.');focusTargets.push(consentInput)}
+      if(missing.length||invalid.length){event.preventDefault();const parts=[];if(missing.length)parts.push('Заполните поля: '+missing.join(', ')+'.');if(invalid.length)parts.push('Исправьте поля: '+invalid.join(', ')+'.');leadStatus.textContent='Заявка не отправлена. '+parts.join(' ');leadStatus.style.color='#a62b3e';focusTargets[0]?.focus();return}
+      leadNonce=createLeadNonce();leadNonceInput.value=leadNonce;try{localStorage.removeItem(leadAckKey(leadNonce))}catch(_){};leadSubmitting=true;leadAwaitingConfirmation=true;leadMessageReceived=false;leadLoadCount=1;leadButton.disabled=true;leadButton.textContent='Отправляем…';leadStatus.textContent='Отправляем заявку…';leadStatus.style.color='';startLeadAckPoll();leadFallbackTimer=setTimeout(()=>{if(leadSubmitting&&!leadMessageReceived){leadSubmitting=false;leadAwaitingConfirmation=false;clearLeadAckPoll();leadButton.disabled=false;leadButton.textContent='Отправить заявку';leadStatus.textContent='Сервер пока не подтвердил статус заявки. Не отправляйте форму повторно, чтобы не создать дубликат. Проверьте новое развёртывание Google Apps Script.';leadStatus.style.color='#53687f'}},45000)
+    });</script></body></html>

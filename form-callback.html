@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Подтверждение заявки</title>
+</head>
+<body>
+<script>
+(function(){
+  try {
+    const raw = new URLSearchParams(location.search).get('data') || '';
+    const data = JSON.parse(raw);
+    if (!data || data.source !== 'shityo-lead' || !data.client_nonce) return;
+    try { localStorage.setItem('shityoLeadAck:' + data.client_nonce, JSON.stringify(data)); } catch (_) {}
+    try { parent.postMessage(data, location.origin); } catch (_) {}
+    try { top.postMessage(data, location.origin); } catch (_) {}
+  } catch (_) {}
+})();
+</script>
+</body>
+</html>
